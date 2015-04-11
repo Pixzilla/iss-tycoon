@@ -21,7 +21,8 @@
 					"constructor": "lychee.game.Layer",
 					"arguments": [{}],
 					"blob": {
-						"entities": [{
+						"entities": [
+                          {
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": 0, "y": 0 }, "type" : "node1", "country" : "US" }]
 						  }, {
@@ -85,7 +86,9 @@
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": -192, "y": -416 }, "type" : "jem", "country" : "US" }]
 						  }
-				}],
+                        ]
+                    }
+                }],
 				"map": {
 					"ship": 0
 				}
