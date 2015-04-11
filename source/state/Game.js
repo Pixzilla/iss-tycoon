@@ -2,7 +2,9 @@
 lychee.define('game.state.Game').requires([
 	'lychee.effect.Alpha',
 	'lychee.effect.Color',
+	'lychee.effect.Position',
 	'lychee.effect.Shake',
+	'game.entity.Astronaut',
 	'game.entity.Background',
 	'game.entity.Airlock',
 	'game.entity.Room',
@@ -21,6 +23,57 @@ lychee.define('game.state.Game').requires([
 	 */
 
 	// TODO: Helpers go here, like power, energy, oxygen
+
+
+	var _animate_astronaut = function(astronaut) {
+
+		var posx     = astronaut.position.x;
+		var posy     = astronaut.position.y;
+		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) { return val instanceof game.entity.Airlock; });
+		var dist     = Infinity;
+		var nearest  = null;
+
+
+		for (var e = 0, el = entities.length; e < el; e++) {
+
+			var entity  = entities[e];
+			var current = Math.sqrt(Math.pow(entity.position.x - posx, 2) + Math.pow(entity.position.y - posy, 2));
+
+			if (current < dist) {
+				dist    = current;
+				nearest = entity;
+			}
+
+		}
+
+
+		var distx = Math.abs(nearest.position.x - astronaut.position.x);
+		var disty = Math.abs(nearest.position.y - astronaut.position.y);
+
+		if (astronaut.nearest === null) {
+
+			if (distx > 32 && disty > 32) {
+
+				var nearx = nearest.position.x;
+				var neary = nearest.position.y;
+
+				astronaut.nearest = nearest;
+				astronaut.addEffect(new lychee.effect.Position({
+					type:     lychee.effect.Position.TYPE.easein,
+					duration: 5000,
+					origin:   { x: posx,  y: posy },
+					position: { x: nearx, y: neary }
+				}));
+
+			}
+
+		} else if (distx < 32 && disty < 32) {
+
+			astronaut.nearest = null;
+
+		}
+
+	};
 
 
 
@@ -66,6 +119,44 @@ lychee.define('game.state.Game').requires([
 			}, this);
 
 		}
+
+
+		this.__astronauts = [
+			new game.entity.Astronaut({
+				state: 'floating',
+				position: { x: -128, y: -256}
+			}),
+			new game.entity.Astronaut({
+				state: 'working-left',
+				position: { x: 64, y: 512 }
+			})
+		];
+
+
+		this.__astronauts.forEach(function(astronaut) {
+			this.queryLayer('game', 'ship').addEntity(astronaut);
+		}.bind(this));
+
+
+		this.loop.setInterval(1000, function(clock, delta) {
+
+			this.__astronauts.forEach(function(astronaut) {
+				_animate_astronaut.call(this, astronaut);
+			}.bind(this));
+
+		}, this);
+
+
+		this.loop.setInterval(10000, function(clock, delta) {
+
+			this.queryLayer('game', 'ship').addEffect(new lychee.effect.Shake({
+				type:     lychee.effect.Shake.TYPE.bounceeaseout,
+				duration: 400,
+				origin:   { x: 0, y: 0 },
+				shake:    { x: Math.random() > 0.5 ? -32 : 32, y: Math.random() > 0.5 ? -32 : 32 }
+			}));
+
+		}, this);
 
 	};
 

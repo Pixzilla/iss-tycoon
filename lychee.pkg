@@ -117,7 +117,12 @@
 					"spaceapps-23": [
 						"png"
 					]
-				}
+				},
+				"Astronaut": [
+					"js",
+					"json",
+					"png"
+				]
 			},
 			"net": {
 				"client": {},
