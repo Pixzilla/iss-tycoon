@@ -8,7 +8,7 @@ lychee.define('game.net.Client').requires([
 	var _BitON = lychee.data.BitON;
 
 	var _blob = attachments["json"].buffer;
-	debugger
+	// debugger
 
 	/* Global LS options. */
 	var lsOptions =  {

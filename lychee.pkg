@@ -128,7 +128,8 @@
 				"client": {},
 				"remote": {},
 				"Client": [
-					"js"
+					"js",
+					"json"
 				],
 				"Server": [
 					"js"
@@ -182,12 +183,9 @@
 				"page": [
 					"astronout.timeline.js"
 				],
-				"xml": [
-					"timeline.manager.js"
 
 				"lightstreamer": [
 					"js"
-
 				]
 			}
 		}
