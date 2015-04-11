@@ -78,9 +78,11 @@
 					"json",
 					"png"
 				],
+
 				"Room_OLD": [
 					"json"
 				],
+
 				"__TMP": {
 					"spaceapps-02": [
 						"png"
@@ -126,7 +128,8 @@
 				"client": {},
 				"remote": {},
 				"Client": [
-					"js"
+					"js",
+					"json"
 				],
 				"Server": [
 					"js"
@@ -136,7 +139,8 @@
 				"Game": [
 					"js",
 					"json",
-					"fnt"
+					"fnt",
+					"json~"
 				]
 			},
 			"ui": {
@@ -160,6 +164,28 @@
 				"js"
 			],
 			"lib": {
+
+				"jquery": [
+					"js"
+				],
+				"lightstreamer": [
+					"js"
+				],
+				"ls": {
+					"lscommons": [
+						"js"
+					],
+					"lsengine": [
+						"js"
+					],
+					"lspushpage": [
+						"js"
+					]
+				},
+				"page": [
+					"astronout.timeline.js"
+				],
+
 				"lightstreamer": [
 					"js"
 				]

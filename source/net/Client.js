@@ -7,6 +7,24 @@ lychee.define('game.net.Client').requires([
 
 	var _BitON = lychee.data.BitON;
 
+	var _blob = attachments["json"].buffer;
+	// debugger
+
+	/* Global LS options. */
+	var lsOptions =  {
+		domain: "nasa.gov",               // domain=web
+		host: "push1.jsc.nasa.gov",     // LS host
+		port: "80",                 // production port=80
+		applicationName: "ISSWeb",          // application name
+		enginePath: "./lib/ls/",          // engine path
+		// telemetryDataAdapter: "PROXYTELEMETRY", // telemetry data adapter
+		dataAdapter: "PROXYTIMELINE",   // timeline data adapter
+		debugAlertsOnClientError: false,    // production=false
+		// webRoot: "http://spacestationlive.nasa.gov/",// production web root for integration with Unity web player
+		tableID: "ISPAstroTimelineTbl"
+	};
+
+
 
 	var Class = function(data) {
 
@@ -15,6 +33,8 @@ lychee.define('game.net.Client').requires([
 			reconnect: 10000
 		}, data);
 
+		var _timelineManager = null;
+		var _pushPage        = null;
 
 		lychee.net.Client.call(this, settings);
 
@@ -45,19 +65,31 @@ lychee.define('game.net.Client').requires([
 
 
 		/**
-		* Lightstream Init
+		* Lightstream Websockets Init
 		*/
 		var client = new LightstreamerClient("https://push.lightstreamer.com","ISSLIVE");
-			client.connect();
-			
-			var sub = new Subscription("MERGE",["USLAB000032","USLAB000035","USLAB000033","USLAB000036","USLAB000034","USLAB000037"],["Value"]);
-			client.subscribe(sub);
-			
-			sub.addListener({
-				onItemUpdate: function(update) {
-					//console.log(update.getItemName(), update.getValue("Value"));
-				}
-			});
+		client.connect();
+		var prefix = 'USLAB0000';
+		var sensors = [];
+		for (var i = 1; i < 53; i++) {
+			var str = prefix;
+			if (i < 10) {
+				str += '0';
+			}
+			str += i;
+			sensors.push(str);
+		}
+		
+		var sub = new Subscription("MERGE",sensors,["Value"]);
+		// client.subscribe(sub);
+		
+		sub.addListener({
+		 onItemUpdate: function(update) {
+		 	// debugger
+		   // console.log(update.getItemName(), update.getValue("Value"));
+		 }
+		});
+
 
 
 	};
