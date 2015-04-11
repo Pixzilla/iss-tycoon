@@ -25,19 +25,19 @@
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": 1, "y": 0 } }]
 						}, {
-							"constructor": "game.entity.Room",
+							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 1, "y": 1 } }]
 						}, {
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": 1, "y": 2 } }]
 						}, {
-							"constructor": "game.entity.Room",
+							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 1, "y": 3 } }]
 						}, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 1, "y": 4 } }]
+							"arguments": [{ "position": { "x": 1, "y": 4 }, "state": "service" }]
 						}, {
-							"constructor": "game.entity.Room",
+							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 1, "y": 5 } }]
 						}]
 					}

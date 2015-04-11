@@ -4,6 +4,7 @@ lychee.define('game.state.Game').requires([
 	'lychee.effect.Color',
 	'lychee.effect.Shake',
 	'game.entity.Background',
+	'game.entity.Airlock',
 	'game.entity.Room'
 ]).includes([
 	'lychee.game.State'
