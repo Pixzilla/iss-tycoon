@@ -1,3 +1,32 @@
+# Interesting Data
+airpressure
+  Crewlock
+    AIRLOCK000049
+  US Lab
+    USLAB000058
+
+temperature
+  US Lab
+    USLAB000059  
+
+# Astronauten
+1. Gennady Padalka
+  http://spacestationlive.jsc.nasa.gov/timeline/timelineAstronaut.html?crew=1
+2. Mikhail Kornienko
+  http://spacestationlive.jsc.nasa.gov/timeline/timelineAstronaut.html?crew=2
+3. Scott Kelly
+4. Anton Shkaplerov
+5. Samantha Cristoforetti
+6. Terry Virts
+-> Alle Astronauten & Science Activities, jedoch leider in XML :/ (wir können aber einfach deren parser etc benutzen)
+
+http://spacestationlive.jsc.nasa.gov/timeline/timelineAstronaut.html?day=Yesterday&hour=15
+
+
+
+
+# Some Notes
+
 airlocks
   Service Module (SM)
     -links: 
@@ -41,24 +70,6 @@ temperature
   US Lab
     USLAB000059  
 
-  US LAB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,3 +77,4 @@ temperature
 http://demos.lightstreamer.com/ISSLive/index.html
 
 http://s2.photobucket.com/user/Avadan/media/Resources/VX/Spacecharas.png.html
+
