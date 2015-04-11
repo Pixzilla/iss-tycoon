@@ -1,4 +1,1 @@
-{
-  "width":  1,
-  "height": 1
-}
+{"map":{"horizontal-big":[{"x":0,"y":0,"w":128,"h":128,"width":128,"height":128}],"horizontal-small":[{"x":128,"y":0,"w":128,"h":128,"width":128,"height":128}],"vertical-big":[{"x":0,"y":128,"w":128,"h":128,"width":128,"height":128}],"vertical-small":[{"x":128,"y":128,"w":128,"h":128,"width":128,"height":128}]},"states":{"horizontal-big":{"animation":false},"horizontal-small":{"animation":false},"vertical-big":{"animation":false},"vertical-small":{"animation":false}}}

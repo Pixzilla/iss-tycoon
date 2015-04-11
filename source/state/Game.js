@@ -43,20 +43,6 @@ lychee.define('game.state.Game').requires([
 		 */
 
 		this.__entity  = null;
-		this.__logic   = new lychee.game.Logic({
-			tile: {
-				width:  32,
-				height: 32,
-				depth:  32
-			},
-			projection: lychee.game.Logic.PROJECTION.tile
-		});
-
-// TODO: Fix bug in lychee
-		this.__logic.setLayers([
-			this.queryLayer('game', 'ship')
-		]);
-		this.addLogic(this.__logic);
 
 
 		var viewport = this.viewport;

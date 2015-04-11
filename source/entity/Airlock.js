@@ -3,34 +3,63 @@ lychee.define('game.entity.Airlock').includes([
   'lychee.game.Sprite'
 ]).exports(function(lychee, global, game, attachments) {
 
-  var _config  = attachments["json"];
-  var _texture = attachments["png"];
+	var _config  = attachments["json"].buffer;
+	var _texture = attachments["png"];
 
 
-  var Class = function(data) {
+	var Class = function(data) {
 
-    var settings = lychee.extend({}, data);
-
-
-    this.on = false;
+		var settings = lychee.extend({}, data);
 
 
-    settings.texture = settings.texture || _texture;
-    settings.width   = settings.width   || _config.width;
-    settings.height  = settings.height  || _config.height;
+		this.on = false;
 
 
-    lychee.game.Sprite.call(this, settings);
-
-  };
-
-
-  Class.prototype = {
-
-  };
+		settings.texture = _texture;
+		settings.width   = 0;
+		settings.height  = 0;
+		settings.map     = _config.map;
+		settings.state   = settings.state || 'default';
+		settings.states  = _config.states;
 
 
-  return Class;
+		lychee.game.Sprite.call(this, settings);
+
+
+		this.setType(settings.type);
+
+		settings = null;
+
+	};
+
+
+	Class.prototype = {
+
+		setType: function(type) {
+
+			type = typeof type === 'string' ? type : null;
+
+
+			if (type !== null) {
+
+				var result = this.setState(type);
+				if (result === true) {
+
+					return true;
+
+				}
+
+			}
+
+
+			return false;
+
+		}
+
+	};
+
+
+	return Class;
 
 });
 
