@@ -12,7 +12,7 @@ lychee.define('game.entity.Room').includes([
 		var settings = lychee.extend({}, data);
 
 
-		this.air         = 0;
+		this.air         = 1;
 		this.power       = 0;
 		this.temp        = 0;
 
