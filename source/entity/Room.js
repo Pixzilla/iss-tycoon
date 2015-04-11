@@ -45,12 +45,8 @@ lychee.define('game.entity.Room').includes([
 
 			if (type !== null) {
 
-console.log(this);
-
 				var result = this.setState(type);
 				if (result === true) {
-
-console.log(this.width, this.height);
 
 					return true;
 

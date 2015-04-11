@@ -1,6 +1,5 @@
 {
-  "type":
-  {
+  "type": {
     "default": { "width":  1, "height":  1 },
 
     "cargo"     : { "width":  4, "height":  2 },
