@@ -72,7 +72,7 @@
 							"arguments": [{ "position": { "x": 0, "y": -336 }, "type": "horizontal-big" }]
 						  }, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": -416 }, "type" : "harmony", "country" : "US" }]
+							"arguments": [{ "position": { "x": 0, "y": -432 }, "type" : "harmony", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 80, "y": -416 }, "type": "vertical-big" }]
