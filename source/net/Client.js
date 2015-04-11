@@ -25,6 +25,22 @@ lychee.define('game.net.Client').requires([
 	};
 
 
+	var _SENSOR_MAP = {
+		destiny: {
+			pressure    : 'USLAB000058',
+	    temperature : 'USLAB000059',
+	    oxygen      : 'USLAB000053',
+	    n2          : 'USLAB000054',
+	    co2         : 'USLAB000055'
+		},
+		crewlock: {
+			pressure    : 'AIRLOCK000054'   
+		},
+		harmony: {
+			water       : 'NODE2000006'
+		}
+	};
+
 
 	var Class = function(data) {
 
@@ -69,25 +85,46 @@ lychee.define('game.net.Client').requires([
 		*/
 		var client = new LightstreamerClient("https://push.lightstreamer.com","ISSLIVE");
 		client.connect();
-		var prefix = 'USLAB0000';
-		var sensors = [];
-		for (var i = 1; i < 53; i++) {
-			var str = prefix;
-			if (i < 10) {
-				str += '0';
-			}
-			str += i;
-			sensors.push(str);
-		}
+
+		var sensors = [].concat.apply([],
+			Object.keys(_SENSOR_MAP).map(function(room) {
+				return Object.keys(_SENSOR_MAP[room]).map(function(property) {
+					return _SENSOR_MAP[room][property];
+				});
+			}));
+
 		
-		var sub = new Subscription("MERGE",sensors,["Value"]);
-		// client.subscribe(sub);
-		
+		var sub = new Subscription("MERGE", sensors, ["Value"]);
+		client.subscribe(sub);
+
+
+		var that = this;
+
 		sub.addListener({
-		 onItemUpdate: function(update) {
-		 	// debugger
-		   // console.log(update.getItemName(), update.getValue("Value"));
-		 }
+			onItemUpdate: function(update) {
+
+				var sensor = update.getItemName();
+				var value = update.getValue("Value");
+				var property = null;
+
+				var room = Object.keys(_SENSOR_MAP).filter(function(room) {
+					return Object.keys(_SENSOR_MAP[room]).filter(function(__property) {
+						var equals = _SENSOR_MAP[room][__property] === sensor;
+						if (equals) {
+							property = __property;
+							return true;
+						} else {
+							return false;
+						}
+					}).length > 0;
+				})[0] || null;
+
+
+				if (room !== null) {
+					that.trigger('sensor', [room, property, value])
+				}
+
+			}
 		});
 
 

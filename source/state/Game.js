@@ -222,6 +222,12 @@ lychee.define('game.state.Game').requires([
 
 			}, this);
 
+
+			this.client.bind('sensor', function(room, property, value) {
+				var room = this.queryLayer('game', 'ship > ' + room);
+				room.properties[property] = value;
+			}, this);
+
 		},
 
 
