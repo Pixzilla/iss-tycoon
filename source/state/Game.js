@@ -24,6 +24,20 @@ lychee.define('game.state.Game').requires([
 
 	// TODO: Helpers go here, like power, energy, oxygen
 
+	var _get_room = function(name) {
+
+		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) {
+			return val instanceof game.entity.Room && val.state === name;
+		});
+
+		if (entities.length > 0) {
+			return entities[0];
+		}
+
+
+		return null;
+
+	};
 
 	var _animate_astronaut = function(astronaut) {
 
