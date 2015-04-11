@@ -14,7 +14,7 @@ lychee.define('game.ui.Overlay').requires([
 		var settings = lychee.extend({}, data);
 
 
-		this.__orbit = 128;
+		this.__orbit = null;
 
 
 		lychee.ui.Layer.call(this, settings);
@@ -53,7 +53,12 @@ lychee.define('game.ui.Overlay').requires([
 				}
 
 
-				this.__orbit = Math.max(entity.width / 2, entity.height / 2, entity.radius);
+				this.__orbit = 64;
+				// Math.max(entity.width / 2, entity.height / 2, entity.radius);
+
+			} else {
+
+				this.__orbit = null;
 
 			}
 
@@ -65,22 +70,53 @@ lychee.define('game.ui.Overlay').requires([
 
 
 
+			if (this.__orbit !== null) {
 
-			var entities = this.entities;
-			var pi2  = 2 * Math.PI / entities.length;
-			var sec  = clock / 2000;
-			var dist = this.__orbit + 64;
+				var entities = this.entities;
+				var pi2  = 2 * Math.PI / entities.length;
+				var sec  = clock / 4000;
+				var dist = this.__orbit + 64;
 
-			for (var e = 0, el = entities.length; e < el; e++) {
+				for (var e = 0, el = entities.length; e < el; e++) {
 
-				var entity = entities[e];
+					var entity = entities[e];
 
-				entity.setPosition({
-					x: Math.sin(sec + e * pi2) * dist,
-					y: Math.cos(sec + e * pi2) * dist
-				});
+					entity.setPosition({
+						x: Math.sin(sec + e * pi2) * dist,
+						y: Math.cos(sec + e * pi2) * dist
+					});
+
+				}
 
 			}
+
+		},
+
+		render: function(renderer, offsetX, offsetY) {
+
+
+			var orbit = this.__orbit;
+			if (orbit !== null) {
+
+				var position = this.position;
+
+				renderer.setAlpha(0.6);
+
+				renderer.drawCircle(
+					position.x + offsetX,
+					position.y + offsetY,
+					orbit + 64,
+					'#0ba2ff',
+					false,
+					1
+				);
+
+				renderer.setAlpha(1);
+
+			}
+
+
+			lychee.ui.Layer.prototype.render.call(this, renderer, offsetX, offsetY);
 
 		}
 

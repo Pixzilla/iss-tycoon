@@ -18,8 +18,10 @@ lychee.define('game.entity.Room').includes([
 		this.type  = null;
 
 		this.properties = {
-			energy: 123,
-			test: 'blub'
+			co2:         '04.00%',
+			oxygen:      '07.00%',
+			n2:          '89.00%',
+			electricity: '43.50%',
 		};
 
 

@@ -60,7 +60,7 @@ lychee.define('game.state.Game').requires([
 				astronaut.nearest = nearest;
 				astronaut.addEffect(new lychee.effect.Position({
 					type:     lychee.effect.Position.TYPE.easein,
-					duration: 5000,
+					duration: 250 * Math.sqrt(Math.pow(distx, 2) + Math.pow(disty, 2)),
 					origin:   { x: posx,  y: posy },
 					position: { x: nearx, y: neary }
 				}));
@@ -124,11 +124,27 @@ lychee.define('game.state.Game').requires([
 		this.__astronauts = [
 			new game.entity.Astronaut({
 				state: 'floating',
-				position: { x: -128, y: -256}
+				position: { x: -128, y: -256 }
+			}),
+			new game.entity.Astronaut({
+				state: 'working-right',
+				position: { x: -512, y: 0 }
+			}),
+			new game.entity.Astronaut({
+				state: 'floating',
+				position: { x: 0, y: 0 }
 			}),
 			new game.entity.Astronaut({
 				state: 'working-left',
-				position: { x: 64, y: 512 }
+				position: { x: 256, y: 256 }
+			}),
+			new game.entity.Astronaut({
+				state: 'working-left',
+				position: { x: 512, y: 512 }
+			}),
+			new game.entity.Astronaut({
+				state: 'working-bottom',
+				position: { x: -256, y: 128 }
 			})
 		];
 
@@ -216,8 +232,6 @@ lychee.define('game.state.Game').requires([
 
 		update: function(clock, delta) {
 
-
-
 			var background = this.queryLayer('background', 'background');
 			if (background !== null) {
 
@@ -241,9 +255,10 @@ lychee.define('game.state.Game').requires([
 
 			if (entity !== null) {
 
+				this.getLayer('background').render(renderer, 0, 0);
+
 				renderer.setAlpha(0.4);
 
-				this.getLayer('background').render(renderer, 0, 0);
 				this.getLayer('game').render(renderer, 0, 0);
 
 				renderer.setAlpha(1);

@@ -139,14 +139,15 @@
 				"Game": [
 					"js",
 					"json",
-					"fnt",
-					"json~"
+					"fnt"
 				]
 			},
 			"ui": {
 				"Bubble": [
 					"fnt",
-					"js"
+					"js",
+					"json",
+					"png"
 				],
 				"Overlay": [
 					"js"
