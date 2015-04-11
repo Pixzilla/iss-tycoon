@@ -84,7 +84,7 @@ lychee.define('game.state.Game').requires([
 
 			lychee.game.State.prototype.deserialize.call(this, blob);
 
-
+			debugger
 			var entity = null;
 
 
