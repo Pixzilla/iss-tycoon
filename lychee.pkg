@@ -67,6 +67,16 @@
 				"Emblem": [
 					"js",
 					"png"
+				],
+				"Airlock": [
+					"js",
+					"json",
+					"png"
+				],
+				"Room": [
+					"js",
+					"json",
+					"png"
 				]
 			},
 			"net": {
