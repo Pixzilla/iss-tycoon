@@ -131,8 +131,7 @@
 				"Game": [
 					"js",
 					"json",
-					"fnt",
-					"json~"
+					"fnt"
 				]
 			},
 			"ui": {

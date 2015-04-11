@@ -48,10 +48,10 @@
 							"arguments": [{ "position": { "x": 0, "y": 352 }, "type": "node0" }]
 						  }, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 48, "y": 352 } , "type": "vartical-small" }]
+							"arguments": [{ "position": { "x": 48, "y": 352 } , "type": "vertical-small" }]
 						  }, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": -48, "y": 352 } , "type": "vartical-small"  }]
+							"arguments": [{ "position": { "x": -48, "y": 352 } , "type": "vertical-small"  }]
 						  }, {
 							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 0, "y": 400 } , "type": "horizontal-small" }]
@@ -81,7 +81,7 @@
 							"arguments": [{ "position": { "x": -80, "y": -416 }, "type": "vertical-big" }]
 						  }, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": -208, "y": -416 }, "type" : "columbus", "country" : "US" }]
+							"arguments": [{ "position": { "x": 208, "y": -416 }, "type" : "columbus", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": -192, "y": -416 }, "type" : "jem", "country" : "US" }]

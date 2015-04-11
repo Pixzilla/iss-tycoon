@@ -3,7 +3,7 @@
 
 	var environment = new lychee.Environment({
 		id:       'iss-tycoon',
-		debug:    true,
+		debug:    false,
 		sandbox:  false,
 		build:    'game.Main',
 		packages: [
