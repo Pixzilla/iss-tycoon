@@ -77,7 +77,42 @@
 					"js",
 					"json",
 					"png"
-				]
+				],
+				"__TMP": {
+					"spaceapps-02": [
+						"png"
+					],
+					"spaceapps-04": [
+						"png"
+					],
+					"spaceapps-06": [
+						"png"
+					],
+					"spaceapps-08": [
+						"png"
+					],
+					"spaceapps-10": [
+						"png"
+					],
+					"spaceapps-12": [
+						"png"
+					],
+					"spaceapps-14": [
+						"png"
+					],
+					"spaceapps-19": [
+						"png"
+					],
+					"spaceapps-20": [
+						"png"
+					],
+					"spaceapps-22": [
+						"png"
+					],
+					"spaceapps-23": [
+						"png"
+					]
+				}
 			},
 			"net": {
 				"client": {},
@@ -93,7 +128,8 @@
 				"Game": [
 					"js",
 					"json",
-					"fnt"
+					"fnt",
+					"json~"
 				]
 			},
 			"ui": {},
@@ -105,7 +141,32 @@
 			],
 			"index": [
 				"js"
-			]
+			],
+			"lib": {
+				"jquery": [
+					"js"
+				],
+				"lightstreamer": [
+					"js"
+				],
+				"ls": {
+					"lscommons": [
+						"js"
+					],
+					"lsengine": [
+						"js"
+					],
+					"lspushpage": [
+						"js"
+					]
+				},
+				"page": [
+					"astronout.timeline.js"
+				],
+				"xml": [
+					"timeline.manager.js"
+				]
+			}
 		}
 	}
 }
