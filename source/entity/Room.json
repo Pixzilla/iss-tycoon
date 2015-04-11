@@ -1,1 +1,162 @@
-{"map":{"columbus":[{"x":0,"y":0,"w":225,"h":225,"width":225,"height":225}],"crewlock":[{"x":225,"y":0,"w":225,"h":225,"width":225,"height":225}],"dc1":[{"x":450,"y":0,"w":225,"h":225,"width":225,"height":225}],"destiny":[{"x":675,"y":0,"w":225,"h":225,"width":225,"height":225}],"fgb":[{"x":0,"y":225,"w":225,"h":225,"width":225,"height":225}],"harmony":[{"x":225,"y":225,"w":225,"h":225,"width":225,"height":225}],"jem":[{"x":450,"y":225,"w":225,"h":225,"width":225,"height":225}],"mrm2":[{"x":675,"y":225,"w":225,"h":225,"width":225,"height":225}],"node0":[{"x":0,"y":450,"w":225,"h":225,"width":225,"height":225}],"node1":[{"x":225,"y":450,"w":225,"h":225,"width":225,"height":225}],"node3":[{"x":450,"y":450,"w":225,"h":225,"width":225,"height":225}],"sm":[{"x":675,"y":450,"w":225,"h":225,"width":225,"height":225}]},"states":{"columbus":{"animation":false},"crewlock":{"animation":false},"dc1":{"animation":false},"destiny":{"animation":false},"fgb":{"animation":false},"harmony":{"animation":false},"jem":{"animation":false},"mrm2":{"animation":false},"node0":{"animation":false},"node1":{"animation":false},"node3":{"animation":false},"sm":{"animation":false}}}
+{
+  "map": {
+    "columbus": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "crewlock": [
+      {
+        "x": 225,
+        "y": 0,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "dc1": [
+      {
+        "x": 450,
+        "y": 0,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "destiny": [
+      {
+        "x": 675,
+        "y": 0,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "fgb": [
+      {
+        "x": 0,
+        "y": 225,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "harmony": [
+      {
+        "x": 225,
+        "y": 225,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "jem": [
+      {
+        "x": 450,
+        "y": 225,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "mrm2": [
+      {
+        "x": 675,
+        "y": 225,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "node0": [
+      {
+        "x": 0,
+        "y": 450,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "node1": [
+      {
+        "x": 225,
+        "y": 450,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "node3": [
+      {
+        "x": 450,
+        "y": 450,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "sm": [
+      {
+        "x": 675,
+        "y": 450,
+        "w": 225,
+        "h": 225,
+        "width": 225,
+        "height": 225
+      }
+    ]
+  },
+  "states": {
+    "columbus": {
+      "animation": false
+    },
+    "crewlock": {
+      "animation": false
+    },
+    "dc1": {
+      "animation": false
+    },
+    "destiny": {
+      "animation": false
+    },
+    "fgb": {
+      "animation": false
+    },
+    "harmony": {
+      "animation": false
+    },
+    "jem": {
+      "animation": false
+    },
+    "mrm2": {
+      "animation": false
+    },
+    "node0": {
+      "animation": false
+    },
+    "node1": {
+      "animation": false
+    },
+    "node3": {
+      "animation": false
+    },
+    "sm": {
+      "animation": false
+    }
+  }
+}
