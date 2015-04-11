@@ -1,7 +1,7 @@
 
 lychee.define('game.entity.Airlock').includes([
-  'lychee.game.Sprite'
-]).exports(function(lychee, global, game, attachments) {
+	'lychee.game.Sprite'
+]).exports(function(lychee, game, global, attachments) {
 
 	var _config  = attachments["json"].buffer;
 	var _texture = attachments["png"];

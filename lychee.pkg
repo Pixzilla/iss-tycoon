@@ -78,6 +78,11 @@
 					"json",
 					"png"
 				],
+
+				"Room_OLD": [
+					"json"
+				],
+
 				"__TMP": {
 					"spaceapps-02": [
 						"png"
@@ -132,7 +137,15 @@
 					"json~"
 				]
 			},
-			"ui": {},
+			"ui": {
+				"Bubble": [
+					"fnt",
+					"js"
+				],
+				"Overlay": [
+					"js"
+				]
+			},
 			"DeviceSpecificHacks": [
 				"js"
 			],
@@ -143,6 +156,7 @@
 				"js"
 			],
 			"lib": {
+
 				"jquery": [
 					"js"
 				],
@@ -165,6 +179,10 @@
 				],
 				"xml": [
 					"timeline.manager.js"
+
+				"lightstreamer": [
+					"js"
+
 				]
 			}
 		}
