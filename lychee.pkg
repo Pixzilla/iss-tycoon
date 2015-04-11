@@ -1,0 +1,101 @@
+{
+	"build": {
+		"environments": {
+			"html-nwjs/main": {
+				"build": "game.Main",
+				"debug": false,
+				"sandbox": false,
+				"packages": [
+					[
+						"game",
+						"./lychee.pkg"
+					]
+				],
+				"tags": {
+					"platform": [
+						"html-nwjs",
+						"html"
+					]
+				},
+				"variant": "application"
+			},
+			"html/main": {
+				"build": "game.Main",
+				"debug": false,
+				"sandbox": false,
+				"packages": [
+					[
+						"game",
+						"./lychee.pkg"
+					]
+				],
+				"tags": {
+					"platform": [
+						"html"
+					]
+				},
+				"variant": "application"
+			},
+			"nodejs/server": {
+				"build": "game.net.Server",
+				"debug": false,
+				"sandbox": false,
+				"packages": [
+					[
+						"game",
+						"./lychee.pkg"
+					]
+				],
+				"tags": {
+					"platform": [
+						"nodejs"
+					]
+				},
+				"variant": "application"
+			}
+		}
+	},
+	"source": {
+		"environments": {},
+		"tags": {},
+		"files": {
+			"entity": {
+				"Background": [
+					"js",
+					"png"
+				],
+				"Emblem": [
+					"js",
+					"png"
+				]
+			},
+			"net": {
+				"client": {},
+				"remote": {},
+				"Client": [
+					"js"
+				],
+				"Server": [
+					"js"
+				]
+			},
+			"state": {
+				"Game": [
+					"js",
+					"json",
+					"fnt"
+				]
+			},
+			"ui": {},
+			"DeviceSpecificHacks": [
+				"js"
+			],
+			"Main": [
+				"js"
+			],
+			"index": [
+				"js"
+			]
+		}
+	}
+}

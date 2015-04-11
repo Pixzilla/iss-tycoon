@@ -1,0 +1,17 @@
+{
+	"layers": {
+		"background": {
+			"constructor": "lychee.game.Layer",
+			"arguments": [{}],
+			"blob": {
+				"entities": [{
+					"constructor": "game.entity.Background",
+					"arguments": [{}]
+				}],
+				"map": {
+					"background": 0
+				}
+			}
+		}
+	}
+}
