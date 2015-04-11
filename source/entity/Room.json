@@ -2,14 +2,19 @@
 	"width":  1,
 	"height": 1,
 
-	"states": {
+	"type": {
 
 		"default": { "width":  1, "height":  1 },
 
 		"cargo":   { "width":  4, "height":  2 },
 		"dock":    { "width":  6, "height":  4 },
 		"lab":     { "width":  4, "height":  3 },
-		"service": { "width":  2, "height":  2 }
-
+		"service": { "width":  2, "height":  2 },
+	  	"node1" :  { "width":  4, "height" : 4 },
+		"sm" 	:  { "width":  6, "height" : 4 },
+		"fgb" 	:  { "width":  6, "height" : 4 },
+		"crewlock" :  { "width":  4, "height" : 2 },
+		"node3" :  { "width":  4, "height" : 4 },
+		"node1" :  { "width":  4, "height" : 4 }
 	}
 }

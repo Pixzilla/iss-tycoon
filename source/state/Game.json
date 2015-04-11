@@ -23,7 +23,7 @@
 					"blob": {
 						"entities": [{
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": 0 }, "state" : "service", "name" : "NODE1", "country" : "US" }]
+							"arguments": [{ "position": { "x": 0, "y": 0 }, "type" : "node1", "country" : "US" }]
 						}, {
 							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 0, "y": 1 } }]
@@ -38,7 +38,7 @@
 							"arguments": [{ "position": { "x": 1, "y": 0 } }]
 						}, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": 2 } , "state" : "cargo", "name" : "FGB", "country" : "RU" }]
+							"arguments": [{ "position": { "x": 0, "y": 2 } , "type" : "cargo", "name" : "FGB", "country" : "RU" }]
 						}, {
 							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 0, "y": 3 } }]
@@ -56,7 +56,7 @@
 							"arguments": [{ "position": { "x": 0, "y": 5 } }]
 						}, {
 						  "constructor": "game.entity.Room",
-						  "arguments": [{ "position": { "x": 0, "y": 6 }, "state" : "service", "name" : "SM", "country" : "RU" }]
+						  "arguments": [{ "position": { "x": 0, "y": 6 }, "type" : "sm", "country" : "RU" }]
 						}, {
 						  "constructor": "game.entity.Room",
 						  "arguments": [{ "position": { "x": -2, "y": 0 }, "state" : "dock", "name" : "crewlock", "country" : "US" }]
