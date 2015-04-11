@@ -43,6 +43,23 @@ lychee.define('game.net.Client').requires([
 
 		this.connect();
 
+
+		/**
+		* Lightstream Init
+		*/
+		var client = new LightstreamerClient("https://push.lightstreamer.com","ISSLIVE");
+			client.connect();
+			
+			var sub = new Subscription("MERGE",["USLAB000032","USLAB000035","USLAB000033","USLAB000036","USLAB000034","USLAB000037"],["Value"]);
+			client.subscribe(sub);
+			
+			sub.addListener({
+				onItemUpdate: function(update) {
+					//console.log(update.getItemName(), update.getValue("Value"));
+				}
+			});
+
+
 	};
 
 
