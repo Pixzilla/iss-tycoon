@@ -1,4 +1,24 @@
 {
+  "type": {
+    "default": { "width":  1, "height":  1 },
+
+    "cargo"     : { "width":  4, "height":  2 },
+    "dock"      : { "width":  6, "height":  4 },
+    "lab"       : { "width":  4, "height":  3 },
+    "service"   : { "width":  2, "height":  2 },
+    "node0"     : { "width":  2, "height" : 2 },
+    "node1"     : { "width":  4, "height" : 4 },
+    "dc1"       : { "width":  4, "height" : 4 },
+    "mrm2"      : { "width":  4, "height" : 4 },
+    "sm" 	    : { "width":  4, "height" : 6 },
+    "fgb" 	    : { "width":  4, "height" : 6 },
+    "crewlock"  : { "width":  2, "height" : 4 },
+    "destiny"   : { "width":  4, "height" : 7 },
+    "harmony"   : { "width":  4, "height" : 4 },
+    "columbus"  : { "width":  7, "height" : 4 },
+    "node3"     : { "width":  6, "height" : 4 },
+    "jem"       : { "width":  6, "height" : 4 }
+  },
   "map": {
     "columbus": [
       {
