@@ -77,7 +77,45 @@
 					"js",
 					"json",
 					"png"
-				]
+				],
+				"Room_OLD": [
+					"json"
+				],
+				"__TMP": {
+					"spaceapps-02": [
+						"png"
+					],
+					"spaceapps-04": [
+						"png"
+					],
+					"spaceapps-06": [
+						"png"
+					],
+					"spaceapps-08": [
+						"png"
+					],
+					"spaceapps-10": [
+						"png"
+					],
+					"spaceapps-12": [
+						"png"
+					],
+					"spaceapps-14": [
+						"png"
+					],
+					"spaceapps-19": [
+						"png"
+					],
+					"spaceapps-20": [
+						"png"
+					],
+					"spaceapps-22": [
+						"png"
+					],
+					"spaceapps-23": [
+						"png"
+					]
+				}
 			},
 			"net": {
 				"client": {},
@@ -93,10 +131,19 @@
 				"Game": [
 					"js",
 					"json",
-					"fnt"
+					"fnt",
+					"json~"
 				]
 			},
-			"ui": {},
+			"ui": {
+				"Bubble": [
+					"fnt",
+					"js"
+				],
+				"Overlay": [
+					"js"
+				]
+			},
 			"DeviceSpecificHacks": [
 				"js"
 			],
@@ -105,7 +152,12 @@
 			],
 			"index": [
 				"js"
-			]
+			],
+			"lib": {
+				"lightstreamer": [
+					"js"
+				]
+			}
 		}
 	}
 }

@@ -5,9 +5,8 @@ lychee.define('game.state.Game').requires([
 	'lychee.effect.Shake',
 	'game.entity.Background',
 	'game.entity.Airlock',
-	'game.entity.Room'
-// TODO: Add this again
-//	'game.ui.Overlay'
+	'game.entity.Room',
+	'game.ui.Overlay'
 ]).includes([
 	'lychee.game.State'
 ]).exports(function(lychee, game, global, attachments) {
@@ -34,6 +33,9 @@ lychee.define('game.state.Game').requires([
 		lychee.game.State.call(this, main);
 
 
+		this.__entity = null;
+
+
 		this.deserialize(_blob);
 
 
@@ -41,9 +43,6 @@ lychee.define('game.state.Game').requires([
 		/*
 		 * INITIALIZATION
 		 */
-
-		this.__entity  = null;
-
 
 		var viewport = this.viewport;
 		if (viewport !== null) {
@@ -104,10 +103,14 @@ lychee.define('game.state.Game').requires([
 			entity = this.getLayer('ui');
 			entity.bind('touch', function(id, position, delta) {
 
-				var layer = this.queryLayer('game', 'ship');
-				if (layer !== null) {
-					this.__entity = layer.getEntity(null, position);
+				var target = this.queryLayer('game', 'ship').getEntity(null, position);
+				if (target !== null) {
+					this.__entity = target;
 					this.__overlay.setEntity(this.__entity);
+					this.__overlay.setPosition(target.position);
+					this.__overlay.setVisible(true);
+				} else {
+					this.__overlay.setVisible(false);
 				}
 
 			}, this);
