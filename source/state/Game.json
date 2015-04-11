@@ -42,7 +42,10 @@
 				"entities": [{
 					"constructor": "game.ui.Overlay",
 					"arguments": [{}]
-				}]
+				}],
+				"map": {
+					"overlay": 0
+				}
 			}
 		}
 	}
