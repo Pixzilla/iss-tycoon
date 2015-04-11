@@ -25,10 +25,10 @@ lychee.define('game.state.Game').requires([
 	// TODO: Helpers go here, like power, energy, oxygen
 
 	var _get_room = function(name) {
-
 		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) {
 			return val instanceof game.entity.Room && val.state === name;
 		});
+
 
 		if (entities.length > 0) {
 			return entities[0];
@@ -176,18 +176,6 @@ lychee.define('game.state.Game').requires([
 
 		}, this);
 
-
-		this.loop.setInterval(10000, function(clock, delta) {
-
-			this.queryLayer('game', 'ship').addEffect(new lychee.effect.Shake({
-				type:     lychee.effect.Shake.TYPE.bounceeaseout,
-				duration: 400,
-				origin:   { x: 0, y: 0 },
-				shake:    { x: Math.random() > 0.5 ? -32 : 32, y: Math.random() > 0.5 ? -32 : 32 }
-			}));
-
-		}, this);
-
 	};
 
 
@@ -237,8 +225,13 @@ lychee.define('game.state.Game').requires([
 			}, this);
 
 
-			this.client.bind('sensor', function(room, property, value) {
-				var room = this.queryLayer('game', 'ship > ' + room);
+			this.client.bind('sensor', function(roomName, property, value) {
+				console.log('test');
+				// debugger
+				var room = _get_room.call(this, roomName);
+				if (property === 'oxygen') {
+					console.log(value);
+				}
 				room.properties[property] = value;
 			}, this);
 

@@ -17,12 +17,7 @@ lychee.define('game.entity.Room').includes([
 		this.temp  = 0;
 		this.type  = null;
 
-		this.properties = {
-			co2:         '04.00%',
-			oxygen:      '07.00%',
-			n2:          '89.00%',
-			electricity: '43.50%',
-		};
+		this.properties = {};
 
 
 		settings.texture = _texture;

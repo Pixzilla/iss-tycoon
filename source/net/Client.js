@@ -29,9 +29,8 @@ lychee.define('game.net.Client').requires([
 		destiny: {
 			pressure    : 'USLAB000058',
 	    temperature : 'USLAB000059',
-	    oxygen      : 'USLAB000053',
 	    n2          : 'USLAB000054',
-	    co2         : 'USLAB000055'
+	    co2         : 'USLAB000053'
 		},
 		crewlock: {
 			pressure    : 'AIRLOCK000054'   
