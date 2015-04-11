@@ -26,50 +26,65 @@
 							"arguments": [{ "position": { "x": 0, "y": 0 }, "type" : "node1", "country" : "US" }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 0, "y": 1 } }]
+							"arguments": [{ "position": { "x": 0, "y": 2.5 } }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 0, "y": -1 } }]
+							"arguments": [{ "position": { "x": 0, "y": -2.5 } }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": -1, "y": 0 } }]
+							"arguments": [{ "position": { "x": 2.5, "y": 0 } }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 1, "y": 0 } }]
+							"arguments": [{ "position": { "x": -2.5, "y": 0 } }]
 						}, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": 2 } , "type" : "cargo", "name" : "FGB", "country" : "RU" }]
+							"arguments": [{ "position": { "x": 0, "y": 6 } , "type" : "fgb", "country" : "RU" }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 0, "y": 3 } }]
+							"arguments": [{ "position": { "x": 0, "y": 9.5 } }]
 						}, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": 4 }, "state": "dock" }]
+							"arguments": [{ "position": { "x": 0, "y": 11 }, "type": "node0" }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": -1, "y": 4 } }]
+							"arguments": [{ "position": { "x": 1.5, "y": 11 } }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 1, "y": 4 } }]
+							"arguments": [{ "position": { "x": -1.5, "y": 11 } }]
 						}, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 0, "y": 5 } }]
+							"arguments": [{ "position": { "x": 0, "y": 12.5 } }]
 						}, {
 						  "constructor": "game.entity.Room",
-						  "arguments": [{ "position": { "x": 0, "y": 6 }, "type" : "sm", "country" : "RU" }]
+						  "arguments": [{ "position": { "x": 0, "y": 16 }, "type" : "sm", "country" : "RU" }]
 						}, {
 						  "constructor": "game.entity.Room",
-						  "arguments": [{ "position": { "x": -2, "y": 0 }, "state" : "dock", "name" : "crewlock", "country" : "US" }]
+						  "arguments": [{ "position": { "x": -6, "y": 0 }, "type" : "node3", "alias" : "tranquility", "country" : "US" }]
 						}, {
 						  "constructor": "game.entity.Room",
-						  "arguments": [{ "position": { "x": 2, "y": 0 }, "state" : "service", "name" : "NODE3", "country" : "US" }]
+						  "arguments": [{ "position": { "x": 4, "y": 0 }, "type" : "crewlock", "country" : "US" }]
 						}, {
 						  "constructor": "game.entity.Room",
-						  "arguments": [{ "position": { "x": -2, "y": 0 }, "state" : "service", "name" : "DESTINY", "country" : "US" }]
-						}],
-						"map": {
-						  "SM": 0
-						}
+						  "arguments": [{ "position": { "x": 0, "y": -3.5 }, "type" : "desitiny", "country" : "US" }]
+						}, {
+							"constructor": "game.entity.Airlock",
+							"arguments": [{ "position": { "x": 0, "y": -10.5 } }]
+						}, {
+						  "constructor": "game.entity.Room",
+						  "arguments": [{ "position": { "x": 0, "y": -13 }, "type" : "harmony", "country" : "US" }]
+						}, {
+						  "constructor": "game.entity.Airlock",
+						  "arguments": [{ "position": { "x": 2.5, "y": -13 } }]
+						}, {
+						  "constructor": "game.entity.Airlock",
+						  "arguments": [{ "position": { "x": -2.5, "y": -13 } }]
+						}, {
+						  "constructor": "game.entity.Room",
+						  "arguments": [{ "position": { "x": -6.5, "y": -13 }, "type" : "columbus", "country" : "US" }]
+						}, {
+						  "constructor": "game.entity.Room",
+						  "arguments": [{ "position": { "x": -6, "y": -13 }, "type" : "jem", "country" : "US" }]
+						}]
 					}
 				}],
 				"map": {
