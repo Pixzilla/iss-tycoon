@@ -36,7 +36,7 @@
 							"arguments": [{ "position": { "x": 80, "y": 0 }, "type": "vertical-big" }]
 						  }, {
 							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 80, "y": 0 }, "type": "vertical-big" }]
+							"arguments": [{ "position": { "x": -80, "y": 0 }, "type": "vertical-big" }]
 						  }, {
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": 0, "y": 192 } , "type" : "fgb", "country" : "RU" }]
@@ -60,13 +60,13 @@
 							"arguments": [{ "position": { "x": 0, "y": 512 }, "type" : "sm", "country" : "RU" }]
 						  }, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": -192, "y": 0 }, "type" : "node3", "alias" : "tranquility", "country" : "US" }]
+							"arguments": [{ "position": { "x": -176, "y": 0 }, "type" : "node3", "alias" : "tranquility", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Room",
 							"arguments": [{ "position": { "x": 128, "y": 0 }, "type" : "crewlock", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 0, "y": -112 }, "type" : "destiny", "country" : "US" }]
+							"arguments": [{ "position": { "x": 0, "y": -208 }, "type" : "destiny", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Airlock",
 							"arguments": [{ "position": { "x": 0, "y": -336 }, "type": "horizontal-big" }]
