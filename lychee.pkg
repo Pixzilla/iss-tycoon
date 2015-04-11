@@ -142,7 +142,9 @@
 			"ui": {
 				"Bubble": [
 					"fnt",
-					"js"
+					"js",
+					"json",
+					"png"
 				],
 				"Overlay": [
 					"js"
