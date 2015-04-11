@@ -6,6 +6,8 @@ lychee.define('game.state.Game').requires([
 	'game.entity.Background',
 	'game.entity.Airlock',
 	'game.entity.Room'
+// TODO: Add this again
+//	'game.ui.Overlay'
 ]).includes([
 	'lychee.game.State'
 ]).exports(function(lychee, game, global, attachments) {
@@ -40,8 +42,8 @@ lychee.define('game.state.Game').requires([
 		 * INITIALIZATION
 		 */
 
-		this.__entity = null;
-		this.__logic  = new lychee.game.Logic({
+		this.__entity  = null;
+		this.__logic   = new lychee.game.Logic({
 			tile: {
 				width:  32,
 				height: 32,
@@ -110,16 +112,16 @@ lychee.define('game.state.Game').requires([
 			 * HELP LAYER
 			 */
 
+			this.__overlay = this.queryLayer('ui', 'overlay');
+
 
 			entity = this.getLayer('ui');
 			entity.bind('touch', function(id, position, delta) {
 
-				console.log(position);
-
-
 				var layer = this.queryLayer('game', 'ship');
 				if (layer !== null) {
 					this.__entity = layer.getEntity(null, position);
+					this.__overlay.setEntity(this.__entity);
 				}
 
 			}, this);
@@ -159,8 +161,16 @@ lychee.define('game.state.Game').requires([
 
 			if (entity !== null) {
 
-				lychee.game.State.prototype.render.call(this, clock, delta, true);
+				renderer.setAlpha(0.4);
 
+				this.getLayer('background').render(renderer, 0, 0);
+				this.getLayer('game').render(renderer, 0, 0);
+
+				renderer.setAlpha(1);
+
+				this.getLayer('ui').render(renderer, 0, 0);
+
+				renderer.flush();
 
 			} else {
 
@@ -173,10 +183,6 @@ lychee.define('game.state.Game').requires([
 		enter: function() {
 
 			lychee.game.State.prototype.enter.call(this);
-
-// TODO: Check projections
-
-console.log(this);
 
 		},
 

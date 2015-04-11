@@ -70,7 +70,13 @@
 		},
 		"ui": {
 			"constructor": "lychee.ui.Layer",
-			"arguments": [{}]
+			"arguments": [{}],
+			"blob": {
+				"entities": [{
+					"constructor": "game.ui.Overlay",
+					"arguments": [{}]
+				}]
+			}
 		}
 	}
 }
