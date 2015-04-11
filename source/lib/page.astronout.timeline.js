@@ -94,9 +94,9 @@ function initPage()
     {
         // Start table subscription once engine is ready
     _nonVisualTable = new NonVisualTable(_group, _group, "MERGE");
-        _nonVisualTable.setSnapshotRequired(true);
-        _nonVisualTable.onItemUpdate = onXMLUpdate;
-        _pushPage.addTable(_nonVisualTable, lsOptions.tableID);
+      _nonVisualTable.setSnapshotRequired(true);
+      _nonVisualTable.onItemUpdate = onXMLUpdate;
+      _pushPage.addTable(_nonVisualTable, lsOptions.tableID);
     };
     
     

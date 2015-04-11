@@ -15,12 +15,14 @@ lychee.define('game.net.Client').requires([
 		port: "80",                 // production port=80
 		applicationName: "ISSWeb",          // application name
 		enginePath: "./lib/ls/",          // engine path
-		telemetryDataAdapter: "PROXYTELEMETRY", // telemetry data adapter
-		timelineDataAdapter: "PROXYTIMELINE",   // timeline data adapter
+		// telemetryDataAdapter: "PROXYTELEMETRY", // telemetry data adapter
+		dataAdapter: "PROXYTIMELINE",   // timeline data adapter
 		debugAlertsOnClientError: false,    // production=false
-		webRoot: "http://spacestationlive.nasa.gov/",// production web root for integration with Unity web player
+		// webRoot: "http://spacestationlive.nasa.gov/",// production web root for integration with Unity web player
 		tableID: "ISPAstroTimelineTbl"
 	};
+
+
 
 	var Class = function(data) {
 
@@ -65,13 +67,24 @@ lychee.define('game.net.Client').requires([
 		*/
 		// var client = new LightstreamerClient("https://push.lightstreamer.com","ISSLIVE");
 		// client.connect();
+		// var prefix = 'USLAB0000';
+		// var sensors = [];
+		// for (var i = 1; i < 53; i++) {
+		// 	var str = prefix;
+		// 	if (i < 10) {
+		// 		str += '0';
+		// 	}
+		// 	str += i;
+		// 	sensors.push(str);
+		// }
 		
-		// var sub = new Subscription("MERGE",["USLAB000032","USLAB000035","USLAB000033","USLAB000036","USLAB000034","USLAB000037"],["Value"]);
+		// var sub = new Subscription("MERGE",sensors,["Value"]);
 		// client.subscribe(sub);
 		
 		// sub.addListener({
 		//  onItemUpdate: function(update) {
-		//    //console.log(update.getItemName(), update.getValue("Value"));
+		//  	// debugger
+		//    console.log(update.getItemName(), update.getValue("Value"));
 		//  }
 		// });
 
@@ -79,26 +92,37 @@ lychee.define('game.net.Client').requires([
 		 * Lightstream XML for Astronouts Data
 		 */
 		_timelineManager = new XMLTimelineManager();
-		_pushPage        = new PushPage();
-		_pushPage.context.setDebugAlertsOnClientError(lsOptions.debugAlertsOnClientError); // (false=production)
-		// console.log(lsOptions.domain);
-		_pushPage.context.setDomain(lsOptions.domain); // domain=web
-		_pushPage.onEngineCreation = function(lsEngine) {
-			lsEngine.connection.setAdapterName(lsOptions.dataAdapter);
-			lsEngine.connection.setLSHost(lsOptions.host);
-			lsEngine.connection.setLSPort(lsOptions.port); // production port=80
-			lsEngine.changeStatus("STREAMING");
-		};
-		_pushPage.bind(); 
-		_pushPage.createEngine(lsOptions.applicationName, lsOptions.enginePath, "SHARE_SESSION");
-		_pushPage.onEngineReady = function(lsEngine) {
-				// Start table subscription once engine is ready
-		_nonVisualTable = new NonVisualTable(_group, _group, "MERGE");
-			debugger
-			_nonVisualTable.setSnapshotRequired(true);
-			_nonVisualTable.onItemUpdate = onXMLUpdate;
-			_pushPage.addTable(_nonVisualTable, lsOptions.tableID);
-		};
+
+
+		// Initialize push page
+		_pushPage = null;
+		_pushPage = new PushPage();
+	  _pushPage.context.setDebugAlertsOnClientError(lsOptions.debugAlertsOnClientError); // (false=production)
+	  _pushPage.context.setDomain(lsOptions.domain); // domain=web
+	  _pushPage.onEngineCreation = function(lsEngine) {
+	  	
+	      lsEngine.connection.setAdapterName(lsOptions.dataAdapter);
+	      lsEngine.connection.setLSHost(lsOptions.host);
+	      lsEngine.connection.setLSPort(lsOptions.port); // production port=80
+	      lsEngine.changeStatus("STREAMING");
+	      
+	  };
+	  
+	  //_pushPage.onClientError = function(msg){ alert(msg); };
+	  //_pushPage.onClientAlert = function(code, msg){ alert(msg);   };
+	  _pushPage.bind(); 
+	  _pushPage.createEngine(lsOptions.applicationName, lsOptions.enginePath, "SHARE_SESSION");
+	  _pushPage.onEngineReady = function(lsEngine) {
+	      // Start table subscription once engine is ready
+		  
+		  function onXMLUpdate() {
+		  	debugger
+		  }
+		  _nonVisualTable = new NonVisualTable(_group, _group, "MERGE");
+	    _nonVisualTable.setSnapshotRequired(true);
+	    _nonVisualTable.onItemUpdate = onXMLUpdate;
+	    _pushPage.addTable(_nonVisualTable, lsOptions.tableID);
+	  };
 
 
 	};

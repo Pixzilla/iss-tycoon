@@ -266,7 +266,7 @@ function XMLTimelineManager()
         } 
         catch (e) 
         {
-            alert(e);
+            throw new Error(e);
         }
     };
     
@@ -707,7 +707,7 @@ function XMLTimelineManager()
         } 
         catch (err) 
         {
-            alert('XML parsing error: ' + err);
+            throw new Error('XML parsing error: ' + err);
         }
     };
     
