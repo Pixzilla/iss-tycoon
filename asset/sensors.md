@@ -1,15 +1,6 @@
 # Interesting Data
-airpressure
-  Crewlock
-    AIRLOCK000049
-  US Lab
-    USLAB000058
-
-temperature
-  US Lab
-    USLAB000059  
-
-# Astronauten
+## Crew Timeline
+### Astronauten
 1. Gennady Padalka
   http://spacestationlive.jsc.nasa.gov/timeline/timelineAstronaut.html?crew=1
 2. Mikhail Kornienko
@@ -22,8 +13,69 @@ temperature
 
 http://spacestationlive.jsc.nasa.gov/timeline/timelineAstronaut.html?day=Yesterday&hour=15
 
+ -> XML
+## Science Timeline
+  -> XML
+## Console Display
 
+  - Position/Orientation of ISS
+    http://spacestationlive.jsc.nasa.gov/displays/adcoDisplay1.html
+    
+    Position: X/Y/Z in km
+    Altitude: Yaw/Pitch/Roll
+ 
+  - S-Band (Also Aussenkommunikation)
+    On/Off
 
+  - Destiny Lab
+    Pressure    USLAB000058
+    Temp        USLAB000059
+    O2          USLAB000053
+    ppN2        USLAB000054
+    ppCO2       USLAB000055
+
+  - Crewlock
+    Pressure    AIRLOCK000054
+    Fan Status  AIRLOCK000053
+
+  - Harmony
+    Kühlflüssigkeit NODE2000006
+
+  - Columbus
+    - Nichts :/
+
+  - Unity Node
+    - Nichts
+
+  - Node 3 (Tranquality)
+    ppO2        NODE3000001
+    ppN2        NODE3000002
+    ppCO2       NODE3000003
+    Fan Status  NODE3000018
+
+  - JEM
+    - Nichts
+
+  - Cooling System
+    Destiny Lab
+      Temp Kühlflüssigkeit      USLAB000061
+    Harmony Lab
+      Temp Kühlflüssigkeit      NODE2000006
+    Tranquility Lab
+      Temp Kühlflüssigkeit      NODE3000013
+
+  - Urine Processor
+    Urine Tank Level (%)          NODE3000005
+
+  - Oxygen Generator
+    O2 Daily Production (kg/day)  NODE3000011
+
+  - Water Tank
+    Clean Water Tank Level (%)    NODE3000009
+
+  - Solar Panels
+    8 Module - jeweils mit Voltage und Ampere.
+    (fraglich ob das noch im hackathon passt)
 
 # Some Notes
 
