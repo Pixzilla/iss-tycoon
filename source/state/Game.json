@@ -27,7 +27,7 @@
 							"arguments": [{ "position": { "x": 0, "y": 0 }, "type" : "node1", "country" : "US" }]
 						  }, {
 							  "constructor": "game.entity.Airlock",
-							  "arguments": [{ "position": { "x": 0, "y": 80 }, "type": "horizontal-big" }]
+							  "arguments": [{ "position": { "x": 0, "y": 80 }, "type": "horizontal-medium" }]
 						  }, {
 							  "constructor": "game.entity.Airlock",
 							  "arguments": [{ "position": { "x": 0, "y": -80 }, "type": "horizontal-big" }]
