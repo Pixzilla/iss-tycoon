@@ -33,7 +33,7 @@ lychee.define('game.net.Client').requires([
 	    co2         : 'USLAB000053'
 		},
 		crewlock: {
-			pressure    : 'AIRLOCK000054'   
+			pressure    : 'AIRLOCK000054'
 		},
 		harmony: {
 			water       : 'NODE2000006'
@@ -92,7 +92,7 @@ lychee.define('game.net.Client').requires([
 				});
 			}));
 
-		
+
 		var sub = new Subscription("MERGE", sensors, ["Value"]);
 		client.subscribe(sub);
 
@@ -102,9 +102,15 @@ lychee.define('game.net.Client').requires([
 		sub.addListener({
 			onItemUpdate: function(update) {
 
-				var sensor = update.getItemName();
-				var value = update.getValue("Value");
+				var sensor   = update.getItemName();
+				var value    = update.getValue("Value");
 				var property = null;
+
+				var test = parseFloat(value);
+				if (!isNaN(test)) {
+					value = '' + Math.round(test).toFixed(2);
+				}
+
 
 				var room = Object.keys(_SENSOR_MAP).filter(function(room) {
 					return Object.keys(_SENSOR_MAP[room]).filter(function(__property) {

@@ -226,13 +226,12 @@ lychee.define('game.state.Game').requires([
 
 
 			this.client.bind('sensor', function(roomName, property, value) {
-				console.log('test');
-				// debugger
+
 				var room = _get_room.call(this, roomName);
-				if (property === 'oxygen') {
-					console.log(value);
+				if (room !== null) {
+					room.properties[property] = value;
 				}
-				room.properties[property] = value;
+
 			}, this);
 
 		},
