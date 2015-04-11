@@ -40,7 +40,8 @@ lychee.define('game.state.Game').requires([
 		 * INITIALIZATION
 		 */
 
-		this.__logic = new lychee.game.Logic({
+		this.__entity = null;
+		this.__logic  = new lychee.game.Logic({
 			tile: {
 				width:  32,
 				height: 32,
@@ -109,6 +110,20 @@ lychee.define('game.state.Game').requires([
 			 * HELP LAYER
 			 */
 
+
+			entity = this.getLayer('ui');
+			entity.bind('touch', function(id, position, delta) {
+
+				console.log(position);
+
+
+				var layer = this.queryLayer('game', 'ship');
+				if (layer !== null) {
+					this.__entity = layer.getEntity(null, position);
+				}
+
+			}, this);
+
 		},
 
 
@@ -119,7 +134,6 @@ lychee.define('game.state.Game').requires([
 
 		update: function(clock, delta) {
 
-			lychee.game.State.prototype.update.call(this, clock, delta);
 
 
 			var background = this.queryLayer('background', 'background');
@@ -133,6 +147,26 @@ lychee.define('game.state.Game').requires([
 
 			}
 
+
+			lychee.game.State.prototype.update.call(this, clock, delta);
+
+		},
+
+		render: function(clock, delta) {
+
+			var entity   = this.__entity;
+			var renderer = this.renderer;
+
+			if (entity !== null) {
+
+				lychee.game.State.prototype.render.call(this, clock, delta, true);
+
+
+			} else {
+
+				lychee.game.State.prototype.render.call(this, clock, delta, false);
+
+			}
 
 		},
 

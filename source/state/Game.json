@@ -23,22 +23,10 @@
 					"blob": {
 						"entities": [{
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 1, "y": 0 } }]
-						}, {
-							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 1, "y": 1 } }]
+							"arguments": [{ "position": { "x": 1, "y": 0 }, "state": "cargo" }]
 						}, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 1, "y": 2 } }]
-						}, {
-							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 1, "y": 3 } }]
-						}, {
-							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": 1, "y": 4 }, "state": "service" }]
-						}, {
-							"constructor": "game.entity.Airlock",
-							"arguments": [{ "position": { "x": 1, "y": 5 } }]
+							"arguments": [{ "position": { "x": 1, "y": 4 }, "state": "dock" }]
 						}]
 					}
 				}],
@@ -46,6 +34,10 @@
 					"ship": 0
 				}
 			}
+		},
+		"ui": {
+			"constructor": "lychee.ui.Layer",
+			"arguments": [{}]
 		}
 	}
 }
