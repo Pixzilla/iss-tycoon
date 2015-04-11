@@ -1,7 +1,7 @@
 
 lychee.define('game.entity.Room').includes([
 	'lychee.game.Sprite'
-]).exports(lychee, global, game, attachments) {
+]).exports(function(lychee, global, game, attachments) {
 
 	var _config  = attachments["json"];
 	var _texture = attachments["png"];

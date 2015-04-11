@@ -3,7 +3,8 @@ lychee.define('game.state.Game').requires([
 	'lychee.effect.Alpha',
 	'lychee.effect.Color',
 	'lychee.effect.Shake',
-	'game.entity.Background'
+	'game.entity.Background',
+	'game.entity.Room'
 ]).includes([
 	'lychee.game.State'
 ]).exports(function(lychee, game, global, attachments) {
@@ -37,6 +38,22 @@ lychee.define('game.state.Game').requires([
 		/*
 		 * INITIALIZATION
 		 */
+
+		this.__logic = new lychee.game.Logic({
+			tile: {
+				width:  32,
+				height: 32,
+				depth:  32
+			},
+			projection: lychee.game.Logic.PROJECTION.tile
+		});
+
+// TODO: Fix bug in lychee
+		this.__logic.setLayers([
+			this.queryLayer('game', 'ship')
+		]);
+		this.addLogic(this.__logic);
+
 
 		var viewport = this.viewport;
 		if (viewport !== null) {
@@ -84,10 +101,8 @@ lychee.define('game.state.Game').requires([
 
 			lychee.game.State.prototype.deserialize.call(this, blob);
 
-			debugger
+
 			var entity = null;
-
-
 
 			/*
 			 * HELP LAYER
@@ -123,6 +138,10 @@ lychee.define('game.state.Game').requires([
 		enter: function() {
 
 			lychee.game.State.prototype.enter.call(this);
+
+// TODO: Check projections
+
+console.log(this);
 
 		},
 

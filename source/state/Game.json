@@ -12,6 +12,40 @@
 					"background": 0
 				}
 			}
+		},
+		"game": {
+			"constructor": "lychee.game.Layer",
+			"arguments": [{}],
+			"blob": {
+				"entities": [{
+					"constructor": "lychee.game.Layer",
+					"arguments": [{}],
+					"blob": {
+						"entities": [{
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 0 } }]
+						}, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 1 } }]
+						}, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 2 } }]
+						}, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 3 } }]
+						}, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 4 } }]
+						}, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 1, "y": 5 } }]
+						}]
+					}
+				}],
+				"map": {
+					"ship": 0
+				}
+			}
 		}
 	}
 }
