@@ -215,10 +215,12 @@ lychee.define('game.state.Game').requires([
 				var target = this.queryLayer('game', 'ship').getEntity(null, position);
 				if (target !== null) {
 					this.__entity = target;
-					this.__overlay.setEntity(this.__entity);
+					this.__overlay.setEntity(target);
 					this.__overlay.setPosition(target.position);
 					this.__overlay.setVisible(true);
 				} else {
+					this.__entity = null;
+					this.__overlay.setEntity(null);
 					this.__overlay.setVisible(false);
 				}
 
