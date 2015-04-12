@@ -9,6 +9,7 @@ lychee.define('game.state.Game').requires([
 	'game.entity.Midground',
 	'game.entity.Airlock',
 	'game.entity.Room',
+	'game.ui.Button',
 	'game.ui.Overlay'
 ]).includes([
 	'lychee.game.State'
@@ -121,6 +122,10 @@ lychee.define('game.state.Game').requires([
 					entity.width  = width;
 					entity.height = height;
 
+					entity = this.queryLayer('ui', 'button');
+					entity.position.x = -1/2 * width  + 128;
+					entity.position.y = -1/2 * height + 80;
+
 				}
 
 			}, this);
@@ -174,6 +179,13 @@ lychee.define('game.state.Game').requires([
 					this.__overlay.setEntity(null);
 					this.__overlay.setVisible(false);
 				}
+
+			}, this);
+
+			entity = this.queryLayer('ui', 'button');
+			entity.bind('touch', function(id, position, delta) {
+
+				console.log('TOUCH!');
 
 			}, this);
 

@@ -18,9 +18,9 @@ lychee.define('game.entity.Background').includes([
 		}
 
 
+		settings.texture = _texture;
 		settings.repeat  = _config.repeat;
 		settings.states  = _config.states;
-		settings.texture = _texture;
 		settings.map     = _config.map;
 
 
