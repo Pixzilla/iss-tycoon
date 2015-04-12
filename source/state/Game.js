@@ -23,8 +23,6 @@ lychee.define('game.state.Game').requires([
 	 * HELPERS
 	 */
 
-	// TODO: Helpers go here, like power, energy, oxygen
-
 	var _get_room = function(name) {
 
 		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) {
@@ -52,8 +50,11 @@ lychee.define('game.state.Game').requires([
 		var room = astronaut.room || null;
 		if (room !== null) {
 
-			var target_x = room.position.x - (room.width  / 2) + (Math.random() * room.width);
-			var target_y = room.position.y - (room.height / 2) + (Math.random() * room.height);
+			var rw = room.width  - 16;
+			var rh = room.height - 16;
+
+			var target_x = room.position.x - (rw / 2) + (Math.random() * rw);
+			var target_y = room.position.y - (rh / 2) + (Math.random() * rh);
 
 			if (target_x > astronaut.position.x) {
 				astronaut.state = 'working-right';
@@ -203,6 +204,7 @@ lychee.define('game.state.Game').requires([
 			this.client.bind('new_astronaut', function(data) {
 
 				var room     = _get_room.call(this, data.room);
+				var state    = data.activity === 'sleep' ? 'default' : (Math.random() > 0.5 ? 'working-right' : 'working-left');
 				var position = {
 					x: room.position.x,
 					y: room.position.y,
@@ -210,7 +212,7 @@ lychee.define('game.state.Game').requires([
 				};
 
 				var astronaut = new game.entity.Astronaut({
-					state:      Math.random() > 0.5 ? 'working-right' : 'working-left',
+					state:      state,
 					position:   position,
 					properties: {
 						name:         data.firstName,
