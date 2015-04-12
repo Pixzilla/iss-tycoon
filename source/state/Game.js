@@ -25,6 +25,7 @@ lychee.define('game.state.Game').requires([
 	// TODO: Helpers go here, like power, energy, oxygen
 
 	var _get_room = function(name) {
+
 		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) {
 			return val instanceof game.entity.Room && val.state === name;
 		});
@@ -134,48 +135,6 @@ lychee.define('game.state.Game').requires([
 
 		}
 
-
-		this.__astronauts = [
-			new game.entity.Astronaut({
-				state: 'floating',
-				position: { x: -128, y: -256 }
-			}),
-			new game.entity.Astronaut({
-				state: 'working-right',
-				position: { x: -512, y: 0 }
-			}),
-			new game.entity.Astronaut({
-				state: 'floating',
-				position: { x: 0, y: 0 }
-			}),
-			new game.entity.Astronaut({
-				state: 'working-left',
-				position: { x: 256, y: 256 }
-			}),
-			new game.entity.Astronaut({
-				state: 'working-left',
-				position: { x: 512, y: 512 }
-			}),
-			new game.entity.Astronaut({
-				state: 'working-bottom',
-				position: { x: -256, y: 128 }
-			})
-		];
-
-
-		this.__astronauts.forEach(function(astronaut) {
-			this.queryLayer('game', 'ship').addEntity(astronaut);
-		}.bind(this));
-
-
-		this.loop.setInterval(1000, function(clock, delta) {
-
-			this.__astronauts.forEach(function(astronaut) {
-				_animate_astronaut.call(this, astronaut);
-			}.bind(this));
-
-		}, this);
-
 	};
 
 
@@ -231,6 +190,38 @@ lychee.define('game.state.Game').requires([
 				if (room !== null) {
 					room.properties[property] = value;
 				}
+
+			}, this);
+
+
+			this.client.bind('new_astronaut', function(data) {
+
+				console.log(data.room);
+				var room = _get_room.call(this, data.room);
+				console.log(room.state);
+				var position = {
+					x: room.position.x,
+					y: room.position.y
+				}
+
+				var astronautConfig = lychee.extend(data, {
+					state: 'working-right',
+					position: position
+				});
+
+
+				var astronaut = new game.entity.Astronaut(data);
+
+				this.queryLayer('game', 'ship').addEntity(astronaut);
+
+			}, this);
+
+
+			this.loop.setInterval(1000, function(clock, delta) {
+
+				this.__astronauts.forEach(function(astronaut) {
+					_animate_astronaut.call(this, astronaut);
+				}.bind(this));
 
 			}, this);
 

@@ -12,8 +12,8 @@
     "activities": [{
         "index": 0,
         "label": "Sleep",
-        "start": "2015-04-10T19:30:00.000Z",
-        "end": "2015-04-11T04:00:00.000Z",
+        "start": "2015-04-11T19:30:00.000Z",
+        "end": "2015-04-12T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is sleeping in their crew quarters onboard the International Space Station.",
@@ -25,8 +25,8 @@
     }, {
         "index": 1,
         "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T04:00:00.000Z",
-        "end": "2015-04-11T05:30:00.000Z",
+        "start": "2015-04-12T04:00:00.000Z",
+        "end": "2015-04-12T05:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
@@ -37,22 +37,9 @@
         }]
     }, {
         "index": 2,
-        "label": "Routine Cleaning And Housekeeping",
-        "start": "2015-04-11T05:30:00.000Z",
-        "end": "2015-04-11T08:30:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Gennady is taking time for general daily housekeeping and maintenance tasks.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 3,
         "label": "Exercise",
-        "start": "2015-04-11T09:30:00.000Z",
-        "end": "2015-04-11T11:00:00.000Z",
+        "start": "2015-04-12T06:50:00.000Z",
+        "end": "2015-04-12T08:20:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "A scheduled Routine Activity is being performed onboard the ISS. These are activities that the crew must perform everyday as part of their living accomodations onboard the ISS. Some routine activities include crew sleep, meals, excersize, personal time and hygiene.",
@@ -62,10 +49,50 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
+        "index": 3,
+        "label": "Conference With Family And Friends",
+        "start": "2015-04-12T08:20:00.000Z",
+        "end": "2015-04-12T08:35:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
+        "links": [{
+            "type": "Video",
+            "name": "Space Station Research",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+        }]
+    }, {
         "index": 4,
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T09:25:00.000Z",
+        "end": "2015-04-12T09:35:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
+        "links": []
+    }, {
+        "index": 5,
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T09:50:00.000Z",
+        "end": "2015-04-12T10:00:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "Gennady, Mikhail, and Anton are preparing for an upcoming Russian Public Affairs Office activity.",
+        "links": []
+    }, {
+        "index": 6,
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T10:00:00.000Z",
+        "end": "2015-04-12T10:15:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
+        "links": []
+    }, {
+        "index": 7,
         "label": "Lunch",
-        "start": "2015-04-11T11:00:00.000Z",
-        "end": "2015-04-11T12:00:00.000Z",
+        "start": "2015-04-12T11:00:00.000Z",
+        "end": "2015-04-12T12:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is taking time to eat lunch onboard the ISS.",
@@ -75,36 +102,36 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 5,
-        "label": "Preparation For Russian Public Affairs Event",
-        "start": "2015-04-11T12:40:00.000Z",
-        "end": "2015-04-11T13:20:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Gennady, Anton, and Mikhail are recording video for a Russian Public Affairs Office (PAO) activity for public broadcast.",
+        "index": 8,
+        "label": "Life Support System Maintenance",
+        "start": "2015-04-12T12:40:00.000Z",
+        "end": "2015-04-12T13:20:00.000Z",
+        "color": "#336600",
+        "category": "ISS Life Support Systems",
+        "description": "Gennady is performing maintenance on the Russian Oxygen Generator System (Elektron).",
         "links": [{
             "type": "Video",
             "name": "What Is The Space Station",
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 6,
-        "label": "Medical Research",
-        "start": "2015-04-11T15:55:00.000Z",
-        "end": "2015-04-11T16:30:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
+        "index": 9,
+        "label": "Conference With Family And Friends",
+        "start": "2015-04-12T13:20:00.000Z",
+        "end": "2015-04-12T13:35:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
         "links": [{
             "type": "Video",
             "name": "Space Station Research",
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
-        "index": 7,
+        "index": 10,
         "label": "Exercise On Russian Exercise Bike",
-        "start": "2015-04-11T16:30:00.000Z",
-        "end": "2015-04-11T17:30:00.000Z",
+        "start": "2015-04-12T16:00:00.000Z",
+        "end": "2015-04-12T17:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is exercising on the Russian Veloergometer (VELO) Exercise bike.",
@@ -114,10 +141,36 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 8,
+        "index": 11,
+        "label": "Prepare For The Next Day's Work",
+        "start": "2015-04-12T17:00:00.000Z",
+        "end": "2015-04-12T17:15:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Gennady is completing evening preparation work which includes plan reviews, report preparations and prep work for the following day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 12,
+        "label": "Discuss Today's Work With The Ground",
+        "start": "2015-04-12T17:15:00.000Z",
+        "end": "2015-04-12T17:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Gennady, Mikhail, Anton, and The Mission Control Center are having a Daily Planning Conference (DPC) with Ground Control to review the activity schedule set forth for the day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 13,
         "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T17:30:00.000Z",
-        "end": "2015-04-11T19:30:00.000Z",
+        "start": "2015-04-12T17:30:00.000Z",
+        "end": "2015-04-12T19:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is taking time for personal activities before going to sleep.",
@@ -127,10 +180,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 9,
+        "index": 14,
         "label": "Sleep",
-        "start": "2015-04-11T19:30:00.000Z",
-        "end": "2015-04-12T04:00:00.000Z",
+        "start": "2015-04-12T19:30:00.000Z",
+        "end": "2015-04-13T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Gennady is sleeping in their crew quarters onboard the International Space Station.",
@@ -154,8 +207,8 @@
     "activities": [{
         "index": 0,
         "label": "Sleep",
-        "start": "2015-04-10T19:30:00.000Z",
-        "end": "2015-04-11T04:00:00.000Z",
+        "start": "2015-04-11T19:30:00.000Z",
+        "end": "2015-04-12T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Mikhail is sleeping in their crew quarters onboard the International Space Station.",
@@ -166,22 +219,9 @@
         }]
     }, {
         "index": 1,
-        "label": "",
-        "start": "2015-04-11T04:00:00.000Z",
-        "end": "2015-04-11T04:05:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 2,
         "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T04:05:00.000Z",
-        "end": "2015-04-11T05:30:00.000Z",
+        "start": "2015-04-12T04:00:00.000Z",
+        "end": "2015-04-12T05:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Mikhail is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
@@ -191,10 +231,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 3,
-        "label": "Test Experiment",
-        "start": "2015-04-11T05:30:00.000Z",
-        "end": "2015-04-11T05:55:00.000Z",
+        "index": 2,
+        "label": "Mix Space Biotechnology",
+        "start": "2015-04-12T07:10:00.000Z",
+        "end": "2015-04-12T07:20:00.000Z",
         "color": "#268EF9",
         "category": "Experiments",
         "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
@@ -204,13 +244,26 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
+        "index": 3,
+        "label": "Exercise On Russian Exercise Bike",
+        "start": "2015-04-12T07:20:00.000Z",
+        "end": "2015-04-12T08:20:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Mikhail is exercising on the Russian Veloergometer (VELO) Exercise bike.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
         "index": 4,
-        "label": "Mix Space Biotechnology",
-        "start": "2015-04-11T05:55:00.000Z",
-        "end": "2015-04-11T06:05:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
+        "label": "Conference With Family And Friends",
+        "start": "2015-04-12T08:20:00.000Z",
+        "end": "2015-04-12T08:35:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
         "links": [{
             "type": "Video",
             "name": "Space Station Research",
@@ -218,48 +271,27 @@
         }]
     }, {
         "index": 5,
-        "label": "Routine Cleaning And Housekeeping",
-        "start": "2015-04-11T06:05:00.000Z",
-        "end": "2015-04-11T07:35:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Mikhail is taking time for general daily housekeeping and maintenance tasks.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T09:50:00.000Z",
+        "end": "2015-04-12T10:00:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "Gennady, Mikhail, and Anton are preparing for an upcoming Russian Public Affairs Office activity.",
+        "links": []
     }, {
         "index": 6,
-        "label": "Strength Training Exercise",
-        "start": "2015-04-11T07:35:00.000Z",
-        "end": "2015-04-11T09:05:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Mikhail is exercising on the Advanced Resistive Exercise Device (ARED).",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T10:00:00.000Z",
+        "end": "2015-04-12T10:15:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
+        "links": []
     }, {
         "index": 7,
-        "label": "Routine Cleaning And Housekeeping",
-        "start": "2015-04-11T09:05:00.000Z",
-        "end": "2015-04-11T10:35:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Mikhail is taking time for general daily housekeeping and maintenance tasks.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 8,
         "label": "Lunch",
-        "start": "2015-04-11T11:00:00.000Z",
-        "end": "2015-04-11T12:00:00.000Z",
+        "start": "2015-04-12T11:00:00.000Z",
+        "end": "2015-04-12T12:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Mikhail is taking time to eat lunch onboard the ISS.",
@@ -269,36 +301,23 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
+        "index": 8,
+        "label": "Conference With Family And Friends",
+        "start": "2015-04-12T14:55:00.000Z",
+        "end": "2015-04-12T15:10:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
+        "links": [{
+            "type": "Video",
+            "name": "Space Station Research",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+        }]
+    }, {
         "index": 9,
-        "label": "Life Support System Maintenance",
-        "start": "2015-04-11T12:00:00.000Z",
-        "end": "2015-04-11T12:40:00.000Z",
-        "color": "#336600",
-        "category": "ISS Life Support Systems",
-        "description": "Mikhail is performing maintenance on the Russian Oxygen Generator System (Elektron).",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 10,
-        "label": "Preparation For Russian Public Affairs Event",
-        "start": "2015-04-11T12:40:00.000Z",
-        "end": "2015-04-11T13:20:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Gennady, Anton, and Mikhail are recording video for a Russian Public Affairs Office (PAO) activity for public broadcast.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 11,
         "label": "Exercise",
-        "start": "2015-04-11T13:30:00.000Z",
-        "end": "2015-04-11T14:30:00.000Z",
+        "start": "2015-04-12T15:20:00.000Z",
+        "end": "2015-04-12T16:50:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "A scheduled Routine Activity is being performed onboard the ISS. These are activities that the crew must perform everyday as part of their living accomodations onboard the ISS. Some routine activities include crew sleep, meals, excersize, personal time and hygiene.",
@@ -308,10 +327,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 12,
+        "index": 10,
         "label": "Mix Space Biotechnology",
-        "start": "2015-04-11T17:20:00.000Z",
-        "end": "2015-04-11T17:30:00.000Z",
+        "start": "2015-04-12T16:50:00.000Z",
+        "end": "2015-04-12T17:00:00.000Z",
         "color": "#268EF9",
         "category": "Experiments",
         "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
@@ -321,10 +340,36 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
+        "index": 11,
+        "label": "Prepare For The Next Day's Work",
+        "start": "2015-04-12T17:00:00.000Z",
+        "end": "2015-04-12T17:15:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Mikhail is completing evening preparation work which includes plan reviews, report preparations and prep work for the following day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 12,
+        "label": "Discuss Today's Work With The Ground",
+        "start": "2015-04-12T17:15:00.000Z",
+        "end": "2015-04-12T17:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Gennady, Mikhail, Anton, and The Mission Control Center are having a Daily Planning Conference (DPC) with Ground Control to review the activity schedule set forth for the day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
         "index": 13,
         "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T17:30:00.000Z",
-        "end": "2015-04-11T19:30:00.000Z",
+        "start": "2015-04-12T17:30:00.000Z",
+        "end": "2015-04-12T19:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Mikhail is taking time for personal activities before going to sleep.",
@@ -336,8 +381,8 @@
     }, {
         "index": 14,
         "label": "Sleep",
-        "start": "2015-04-11T19:30:00.000Z",
-        "end": "2015-04-12T04:00:00.000Z",
+        "start": "2015-04-12T19:30:00.000Z",
+        "end": "2015-04-13T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Mikhail is sleeping in their crew quarters onboard the International Space Station.",
@@ -361,8 +406,8 @@
     "activities": [{
         "index": 0,
         "label": "Sleep",
-        "start": "2015-04-10T19:30:00.000Z",
-        "end": "2015-04-11T04:00:00.000Z",
+        "start": "2015-04-11T19:30:00.000Z",
+        "end": "2015-04-12T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Scott is sleeping in their crew quarters onboard the International Space Station.",
@@ -373,126 +418,22 @@
         }]
     }, {
         "index": 1,
-        "label": "End Urine Human (Medical) Research",
-        "start": "2015-04-11T04:00:00.000Z",
-        "end": "2015-04-11T04:05:00.000Z",
-        "color": "#F39F9F",
-        "category": "Earth and Space Science",
-        "description": "The HICO and RAIDS Experiment Payload - Hyperspectral Imager for the Coastal Ocean (HREP-HICO) uses a special camera that separates light into hundreds of wavelength channels, which reveals information about the composition of water and land along the coasts. Each scene covers an area of about 30 miles by 125 miles, which captures features like river outflow plumes or algae blooms, and lets scientists do environmental characterization of coastal regions.",
+        "label": "Personal Time Before Going To Work",
+        "start": "2015-04-12T04:00:00.000Z",
+        "end": "2015-04-12T05:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Scott is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
         "links": [{
             "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
         "index": 2,
-        "label": "",
-        "start": "2015-04-11T04:05:00.000Z",
-        "end": "2015-04-11T04:10:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 3,
-        "label": "Twin Collection Urine",
-        "start": "2015-04-11T04:10:00.000Z",
-        "end": "2015-04-11T04:30:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 4,
-        "label": "Insert Operate Human (Medical) Research Freezer",
-        "start": "2015-04-11T04:30:00.000Z",
-        "end": "2015-04-11T04:35:00.000Z",
-        "color": "#F39F9F",
-        "category": "Earth and Space Science",
-        "description": "The HICO and RAIDS Experiment Payload - Hyperspectral Imager for the Coastal Ocean (HREP-HICO) uses a special camera that separates light into hundreds of wavelength channels, which reveals information about the composition of water and land along the coasts. Each scene covers an area of about 30 miles by 125 miles, which captures features like river outflow plumes or algae blooms, and lets scientists do environmental characterization of coastal regions.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 5,
-        "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T04:35:00.000Z",
-        "end": "2015-04-11T05:30:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Scott is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 6,
-        "label": "Test Experiment",
-        "start": "2015-04-11T05:30:00.000Z",
-        "end": "2015-04-11T05:55:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 7,
-        "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T05:55:00.000Z",
-        "end": "2015-04-11T06:30:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Scott is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 8,
-        "label": "Clean Hygiene Equipment",
-        "start": "2015-04-11T06:30:00.000Z",
-        "end": "2015-04-11T09:30:00.000Z",
-        "color": "#336600",
-        "category": "ISS Life Support Systems",
-        "description": "A scheduled Life Support Systems activity is being performed onboard the ISS. The Environmental Control and Life Support System (ECLSS) includes compact and powerful systems that provide the crew with a comfortable environment in which to live and work.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 9,
-        "label": "Treadmill Exercise",
-        "start": "2015-04-11T10:00:00.000Z",
-        "end": "2015-04-11T11:00:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Scott is exercising on the T2 Treadmill (a.k.a. as the Combined Operational Load Bearing External Treadmill (COLBERT)",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 10,
         "label": "Lunch",
-        "start": "2015-04-11T11:00:00.000Z",
-        "end": "2015-04-11T12:00:00.000Z",
+        "start": "2015-04-12T11:00:00.000Z",
+        "end": "2015-04-12T12:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Scott is taking time to eat lunch onboard the ISS.",
@@ -502,49 +443,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 11,
-        "label": "Fill In Questionnaire About Food And Appetite",
-        "start": "2015-04-11T12:00:00.000Z",
-        "end": "2015-04-11T12:10:00.000Z",
-        "color": "#3333CC",
-        "category": "Medical",
-        "description": "Scott is recording data onto the Health Maintenance System (HMS) Food Frequency Questionnaire (FFQ), which is part of a comprehensive nutrition program designed to help ensure the health of long-duration crew members onboard the International Space Station.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 12,
-        "label": "Twin Store Urine",
-        "start": "2015-04-11T12:50:00.000Z",
-        "end": "2015-04-11T13:10:00.000Z",
-        "color": "#268EF9",
-        "category": "Experiments",
-        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 13,
-        "label": "Conference With Family And Friends",
-        "start": "2015-04-11T13:10:00.000Z",
-        "end": "2015-04-11T13:25:00.000Z",
-        "color": "#3333CC",
-        "category": "Medical",
-        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 14,
+        "index": 3,
         "label": "Strength Training Exercise",
-        "start": "2015-04-11T13:55:00.000Z",
-        "end": "2015-04-11T15:20:00.000Z",
+        "start": "2015-04-12T13:25:00.000Z",
+        "end": "2015-04-12T14:55:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Scott is exercising on the Advanced Resistive Exercise Device (ARED).",
@@ -554,23 +456,36 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 15,
-        "label": "Record A Journal Entry",
-        "start": "2015-04-11T17:15:00.000Z",
-        "end": "2015-04-11T17:30:00.000Z",
-        "color": "#F2E898",
-        "category": "Human Research",
-        "description": "Behavioral Issues Associated with Isolation and Confinement: Review and Analysis of Astronaut Journals (Journals) obtains information on behavioral and human issues that are relevant to the design of equipment and procedures and sustained human performance during extended-duration missions. Study results will provide information to help prepare for future missions to low-Earth orbit and beyond.",
+        "index": 4,
+        "label": "Treadmill Exercise",
+        "start": "2015-04-12T14:55:00.000Z",
+        "end": "2015-04-12T15:55:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Scott is exercising on the T2 Treadmill (a.k.a. as the Combined Operational Load Bearing External Treadmill (COLBERT)",
         "links": [{
             "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 16,
+        "index": 5,
+        "label": "Prepare For The Next Day's Work",
+        "start": "2015-04-12T16:55:00.000Z",
+        "end": "2015-04-12T17:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Scott is completing evening preparation work which includes plan reviews, report preparations and prep work for the following day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 6,
         "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T17:30:00.000Z",
-        "end": "2015-04-11T19:30:00.000Z",
+        "start": "2015-04-12T17:30:00.000Z",
+        "end": "2015-04-12T18:20:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Scott is taking time for personal activities before going to sleep.",
@@ -580,10 +495,49 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 17,
+        "index": 7,
+        "label": "Conference With Ground",
+        "start": "2015-04-12T18:20:00.000Z",
+        "end": "2015-04-12T18:35:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
+        "links": [{
+            "type": "Video",
+            "name": "Space Station Research",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+        }]
+    }, {
+        "index": 8,
+        "label": "Personal Time Before Going To Sleep",
+        "start": "2015-04-12T18:35:00.000Z",
+        "end": "2015-04-12T19:25:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Scott is taking time for personal activities before going to sleep.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 9,
+        "label": "Habitat Task",
+        "start": "2015-04-12T19:25:00.000Z",
+        "end": "2015-04-12T19:30:00.000Z",
+        "color": "#268EF9",
+        "category": "Experiments",
+        "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
+        "links": [{
+            "type": "Video",
+            "name": "Space Station Research",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
+        }]
+    }, {
+        "index": 10,
         "label": "Sleep",
-        "start": "2015-04-11T19:30:00.000Z",
-        "end": "2015-04-12T04:00:00.000Z",
+        "start": "2015-04-12T19:30:00.000Z",
+        "end": "2015-04-13T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Scott is sleeping in their crew quarters onboard the International Space Station.",
@@ -607,8 +561,8 @@
     "activities": [{
         "index": 0,
         "label": "Sleep",
-        "start": "2015-04-10T19:30:00.000Z",
-        "end": "2015-04-11T04:00:00.000Z",
+        "start": "2015-04-11T19:30:00.000Z",
+        "end": "2015-04-12T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Anton is sleeping in their crew quarters onboard the International Space Station.",
@@ -620,8 +574,8 @@
     }, {
         "index": 1,
         "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T04:00:00.000Z",
-        "end": "2015-04-11T05:30:00.000Z",
+        "start": "2015-04-12T04:00:00.000Z",
+        "end": "2015-04-12T05:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Anton is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
@@ -632,22 +586,9 @@
         }]
     }, {
         "index": 2,
-        "label": "Routine Cleaning And Housekeeping",
-        "start": "2015-04-11T05:30:00.000Z",
-        "end": "2015-04-11T07:30:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Anton is taking time for general daily housekeeping and maintenance tasks.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 3,
-        "label": "Execute Sensor",
-        "start": "2015-04-11T08:00:00.000Z",
-        "end": "2015-04-11T08:40:00.000Z",
+        "label": "Sensor",
+        "start": "2015-04-12T06:45:00.000Z",
+        "end": "2015-04-12T06:50:00.000Z",
         "color": "#268EF9",
         "category": "Experiments",
         "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
@@ -657,36 +598,54 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
-        "index": 4,
-        "label": "Exercise On Russian Exercise Bike",
-        "start": "2015-04-11T08:40:00.000Z",
-        "end": "2015-04-11T09:40:00.000Z",
+        "index": 3,
+        "label": "Strength Training Exercise",
+        "start": "2015-04-12T06:50:00.000Z",
+        "end": "2015-04-12T08:20:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
-        "description": "Anton is exercising on the Russian Veloergometer (VELO) Exercise bike.",
+        "description": "Anton is exercising on the Advanced Resistive Exercise Device (ARED).",
         "links": [{
             "type": "Video",
             "name": "What Is The Space Station",
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 4,
+        "label": "Conference With Family And Friends",
+        "start": "2015-04-12T08:20:00.000Z",
+        "end": "2015-04-12T08:35:00.000Z",
+        "color": "#3333CC",
+        "category": "Medical",
+        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
+        "links": [{
+            "type": "Video",
+            "name": "Space Station Research",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
         "index": 5,
-        "label": "Routine Cleaning And Housekeeping",
-        "start": "2015-04-11T10:00:00.000Z",
-        "end": "2015-04-11T11:00:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Anton is taking time for general daily housekeeping and maintenance tasks.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T09:50:00.000Z",
+        "end": "2015-04-12T10:00:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "Gennady, Mikhail, and Anton are preparing for an upcoming Russian Public Affairs Office activity.",
+        "links": []
     }, {
         "index": 6,
+        "label": "Preparation For Russian Public Affairs Event",
+        "start": "2015-04-12T10:00:00.000Z",
+        "end": "2015-04-12T10:15:00.000Z",
+        "color": "#CC9966",
+        "category": "Unspecified",
+        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
+        "links": []
+    }, {
+        "index": 7,
         "label": "Lunch",
-        "start": "2015-04-11T11:00:00.000Z",
-        "end": "2015-04-11T12:00:00.000Z",
+        "start": "2015-04-12T11:00:00.000Z",
+        "end": "2015-04-12T12:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Anton is taking time to eat lunch onboard the ISS.",
@@ -696,23 +655,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 7,
-        "label": "Preparation For Russian Public Affairs Event",
-        "start": "2015-04-11T12:40:00.000Z",
-        "end": "2015-04-11T13:20:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Gennady, Anton, and Mikhail are recording video for a Russian Public Affairs Office (PAO) activity for public broadcast.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
         "index": 8,
         "label": "Exercise",
-        "start": "2015-04-11T14:30:00.000Z",
-        "end": "2015-04-11T16:00:00.000Z",
+        "start": "2015-04-12T14:20:00.000Z",
+        "end": "2015-04-12T15:20:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "A scheduled Routine Activity is being performed onboard the ISS. These are activities that the crew must perform everyday as part of their living accomodations onboard the ISS. Some routine activities include crew sleep, meals, excersize, personal time and hygiene.",
@@ -723,9 +669,35 @@
         }]
     }, {
         "index": 9,
+        "label": "Prepare For The Next Day's Work",
+        "start": "2015-04-12T17:00:00.000Z",
+        "end": "2015-04-12T17:15:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Anton is completing evening preparation work which includes plan reviews, report preparations and prep work for the following day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 10,
+        "label": "Discuss Today's Work With The Ground",
+        "start": "2015-04-12T17:15:00.000Z",
+        "end": "2015-04-12T17:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Gennady, Mikhail, Anton, and The Mission Control Center are having a Daily Planning Conference (DPC) with Ground Control to review the activity schedule set forth for the day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 11,
         "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T17:30:00.000Z",
-        "end": "2015-04-11T19:25:00.000Z",
+        "start": "2015-04-12T17:30:00.000Z",
+        "end": "2015-04-12T19:25:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Anton is taking time for personal activities before going to sleep.",
@@ -735,10 +707,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 10,
+        "index": 12,
         "label": "Sensor",
-        "start": "2015-04-11T19:25:00.000Z",
-        "end": "2015-04-11T19:30:00.000Z",
+        "start": "2015-04-12T19:25:00.000Z",
+        "end": "2015-04-12T19:30:00.000Z",
         "color": "#268EF9",
         "category": "Experiments",
         "description": "A scheduled scientific experiment is taking place. The ISS is a unique international research facility where crew members  conduct multidiscipline research in biology and biotechnology, materials and physical science, technology advancement and development, and research on the effects of long-duration space flight on the human body. The results of the research completed on the ISS may be applied to various areas of science, enabling us to improve life on this planet and giving us the experience and increased understanding to journey to other worlds.",
@@ -748,10 +720,10 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
         }]
     }, {
-        "index": 11,
+        "index": 13,
         "label": "Sleep",
-        "start": "2015-04-11T19:30:00.000Z",
-        "end": "2015-04-12T04:00:00.000Z",
+        "start": "2015-04-12T19:30:00.000Z",
+        "end": "2015-04-13T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Anton is sleeping in their crew quarters onboard the International Space Station.",
@@ -775,8 +747,8 @@
     "activities": [{
         "index": 0,
         "label": "Sleep",
-        "start": "2015-04-10T19:30:00.000Z",
-        "end": "2015-04-11T04:00:00.000Z",
+        "start": "2015-04-11T19:30:00.000Z",
+        "end": "2015-04-12T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Samantha is sleeping in their crew quarters onboard the International Space Station.",
@@ -788,8 +760,8 @@
     }, {
         "index": 1,
         "label": "Personal Time Before Going To Work",
-        "start": "2015-04-11T04:00:00.000Z",
-        "end": "2015-04-11T05:30:00.000Z",
+        "start": "2015-04-12T04:00:00.000Z",
+        "end": "2015-04-12T05:30:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Samantha is using this time to prepare for the activities of the day by doing things such as eating breakfast, inspecting the Space Station, morning hygienic care, etc.",
@@ -800,44 +772,9 @@
         }]
     }, {
         "index": 2,
-        "label": "Video And/Or Photograph Monitor Computer Station For Robotics Control High Definition",
-        "start": "2015-04-11T05:30:00.000Z",
-        "end": "2015-04-11T05:35:00.000Z",
-        "color": "#CC9966",
-        "category": "Unspecified",
-        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
-        "links": []
-    }, {
-        "index": 3,
-        "label": "Clean Hygiene Equipment",
-        "start": "2015-04-11T05:35:00.000Z",
-        "end": "2015-04-11T08:35:00.000Z",
-        "color": "#336600",
-        "category": "ISS Life Support Systems",
-        "description": "A scheduled Life Support Systems activity is being performed onboard the ISS. The Environmental Control and Life Support System (ECLSS) includes compact and powerful systems that provide the crew with a comfortable environment in which to live and work.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 4,
-        "label": "Check Generic Bioprocessing Apparatus",
-        "start": "2015-04-11T08:50:00.000Z",
-        "end": "2015-04-11T08:55:00.000Z",
-        "color": "#A2DC50",
-        "category": "Technology",
-        "description": "The Commercial Generic Bioprocessing Apparatus (CGBA) provides programmable, accurate temperature control for applications ranging from cold stowage to customizable incubation. The CGBA is used for experiments on cells, microbes, and plants.",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 5,
         "label": "Strength Training Exercise",
-        "start": "2015-04-11T09:35:00.000Z",
-        "end": "2015-04-11T11:00:00.000Z",
+        "start": "2015-04-12T08:30:00.000Z",
+        "end": "2015-04-12T10:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Samantha is exercising on the Advanced Resistive Exercise Device (ARED).",
@@ -847,10 +784,23 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
-        "index": 6,
+        "index": 3,
+        "label": "Exercise On US Exercise Bike",
+        "start": "2015-04-12T10:00:00.000Z",
+        "end": "2015-04-12T11:00:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Samantha is exercising on the Cycle Ergometer with Vibration Isolation and Stabilization (CEVIS) U.S. bicycle/ergometer.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 4,
         "label": "Lunch",
-        "start": "2015-04-11T11:00:00.000Z",
-        "end": "2015-04-11T12:00:00.000Z",
+        "start": "2015-04-12T11:00:00.000Z",
+        "end": "2015-04-12T12:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Samantha is taking time to eat lunch onboard the ISS.",
@@ -860,71 +810,36 @@
             "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
         }]
     }, {
+        "index": 5,
+        "label": "Prepare For The Next Day's Work",
+        "start": "2015-04-12T16:55:00.000Z",
+        "end": "2015-04-12T17:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Samantha is completing evening preparation work which includes plan reviews, report preparations and prep work for the following day.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
+        "index": 6,
+        "label": "Personal Time Before Going To Sleep",
+        "start": "2015-04-12T17:30:00.000Z",
+        "end": "2015-04-12T19:30:00.000Z",
+        "color": "#9999FF",
+        "category": "Routine Activities",
+        "description": "Samantha is taking time for personal activities before going to sleep.",
+        "links": [{
+            "type": "Video",
+            "name": "What Is The Space Station",
+            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
+        }]
+    }, {
         "index": 7,
-        "label": "Columbus Module Laptop",
-        "start": "2015-04-11T12:40:00.000Z",
-        "end": "2015-04-11T13:20:00.000Z",
-        "color": "#CC9966",
-        "category": "Unspecified",
-        "description": "The activity scheduled at this time is using resources aboard the International Space Station.  A resource is anything that has a defined maximum usage.  Common resources are: effort by the crew (their time) - electrical power - thermal cooling - and radio communication bandwidth.  The timeline, and the activities scheduled, allow both the crew and the flight controllers to know what is happening, when it is happening, and what resources are being used.",
-        "links": []
-    }, {
-        "index": 8,
-        "label": "Treadmill Exercise",
-        "start": "2015-04-11T16:00:00.000Z",
-        "end": "2015-04-11T17:00:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Samantha is exercising on the T2 Treadmill (a.k.a. as the Combined Operational Load Bearing External Treadmill (COLBERT)",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 9,
-        "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T17:30:00.000Z",
-        "end": "2015-04-11T18:05:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Samantha is taking time for personal activities before going to sleep.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 10,
-        "label": "Conference With Family And Friends",
-        "start": "2015-04-11T18:05:00.000Z",
-        "end": "2015-04-11T18:20:00.000Z",
-        "color": "#3333CC",
-        "category": "Medical",
-        "description": "A scheduled medical activity is being performed onboard the ISS. Medical activities fall under theThe Crew Health Care System (CHeCS)/Integrated Medical System. These include a suite of hardware on the ISS that provides the medical and environmental capabilities necessary to ensure the health and safety of crewmembers during long-duration missions. CHeCS is divided into three subsystems: The Countermeasure System (CMS), the Environmental Health System (EHS), and the Health Maintenance System (HMS).",
-        "links": [{
-            "type": "Video",
-            "name": "Space Station Research",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97769842"
-        }]
-    }, {
-        "index": 11,
-        "label": "Personal Time Before Going To Sleep",
-        "start": "2015-04-11T18:20:00.000Z",
-        "end": "2015-04-11T19:30:00.000Z",
-        "color": "#9999FF",
-        "category": "Routine Activities",
-        "description": "Samantha is taking time for personal activities before going to sleep.",
-        "links": [{
-            "type": "Video",
-            "name": "What Is The Space Station",
-            "url": "http://www.nasa.gov/multimedia/videogallery/index.html?media_id=97766082"
-        }]
-    }, {
-        "index": 12,
         "label": "Sleep",
-        "start": "2015-04-11T19:30:00.000Z",
-        "end": "2015-04-12T04:00:00.000Z",
+        "start": "2015-04-12T19:30:00.000Z",
+        "end": "2015-04-13T04:00:00.000Z",
         "color": "#9999FF",
         "category": "Routine Activities",
         "description": "Samantha is sleeping in their crew quarters onboard the International Space Station.",

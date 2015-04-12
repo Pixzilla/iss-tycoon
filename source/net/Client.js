@@ -7,23 +7,12 @@ lychee.define('game.net.Client').requires([
 
 	var _BitON = lychee.data.BitON;
 
+	// UGLY HACK, but doesnt work without (don't ask why)
 	var _blob = attachments["json"].buffer;
-	// debugger
 
-	/* Global LS options. */
-	var lsOptions =  {
-		domain: "nasa.gov",               // domain=web
-		host: "push1.jsc.nasa.gov",     // LS host
-		port: "80",                 // production port=80
-		applicationName: "ISSWeb",          // application name
-		enginePath: "./lib/ls/",          // engine path
-		// telemetryDataAdapter: "PROXYTELEMETRY", // telemetry data adapter
-		dataAdapter: "PROXYTIMELINE",   // timeline data adapter
-		debugAlertsOnClientError: false,    // production=false
-		// webRoot: "http://spacestationlive.nasa.gov/",// production web root for integration with Unity web player
-		tableID: "ISPAstroTimelineTbl"
-	};
+	var _ROOMS = ['node1', 'fgb', 'node0', 'sm', 'node3', 'crewlock', 'destiny', 'harmony', 'columbus', 'jem'];
 
+	var _astronaut_id = 0;
 
 	var _SENSOR_MAP = {
 		destiny: {
@@ -65,6 +54,21 @@ lychee.define('game.net.Client').requires([
 				console.log('(ISS Tycoon) game.net.Client: Remote connected');
 			}
 
+
+
+			/**
+			 * Astronauts
+			 */
+
+
+			_blob.forEach(function(astronaut) {
+				// debugger
+				astronaut.room = _ROOMS[_astronaut_id++];
+				_astronaut_id = _astronaut_id % _ROOMS.length;
+
+				this.trigger('new_astronaut', [astronaut]);
+			}, this);
+
 		}, this);
 
 		this.bind('disconnect', function(code) {
@@ -77,6 +81,9 @@ lychee.define('game.net.Client').requires([
 
 
 		this.connect();
+
+
+
 
 
 		/**
@@ -131,8 +138,6 @@ lychee.define('game.net.Client').requires([
 
 			}
 		});
-
-
 
 	};
 

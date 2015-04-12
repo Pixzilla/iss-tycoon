@@ -15,13 +15,13 @@ lychee.define('game.entity.Astronaut').includes([
 		this.nearest = null;
 
 
-		settings.texture = _texture;
-		settings.width   = _config.width;
-		settings.height  = _config.height;
-		settings.map     = _config.map;
-		settings.shape   = _config.shape;
-		settings.states  = _config.states;
-		settings.state   = settings.state || _config.state;
+		settings.texture 		= _texture;
+		settings.width   		= _config.width;
+		settings.height  		= _config.height;
+		settings.map     		= _config.map;
+		settings.shape   		= _config.shape;
+		settings.states  		= _config.states;
+		settings.state   		= settings.state || _config.state;
 
 
 		lychee.game.Sprite.call(this, settings);
