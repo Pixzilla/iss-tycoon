@@ -18,6 +18,30 @@
 			background: url('./entity/Background.png') #000000 center center repeat repeat;
 		}
 		
+		#intro {
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			bottom: 50%;
+			left: 50%;
+			text-align: center;
+			line-height: 100%;
+			opacity: 1;
+			-moz-transition: all 2s ease-out;
+			-ms-transition: all 2s ease-out;
+			-webkit-transition: all 2s ease-out;
+			transition: all 2s ease-out;
+		}
+
+		#intro img {
+			border: 0px;
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
 		.lychee-Renderer-canvas {
 			display: block;
 			margin: 0 auto;
@@ -35,21 +59,40 @@
 
 </head>
 <body>
+	<div id="intro">
+		<img src="./logo.png">
+	</div>
 	<script src="./lib/lightstreamer.js"></script>
 
 	<script src="./index.js"></script>
 
 	<script>
+	setTimeout(function() {
+
+		var intro = document.querySelector('#intro');
+		if (intro !== null) {
+			intro.style.opacity = 0;
+		}
+
+	}, 0);
 
 	setTimeout(function() {
 
-		var element = document.querySelector('canvas');
-		if (element !== null) {
-			element.style.opacity = 1;
+		var canvas = document.querySelector('canvas');
+		if (canvas !== null) {
+			canvas.style.opacity = 1;
 		}
 
 	}, 1000);
-	</script>
 
+	setTimeout(function() {
+	
+		var intro = document.querySelector('#intro');
+		if (intro !== null) {
+			document.body.removeChild(intro);
+		}
+
+	}, 3000);
+	</script>
 </body>
 </html>    
