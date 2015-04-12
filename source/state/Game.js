@@ -212,28 +212,22 @@ lychee.define('game.state.Game').requires([
 
 			this.client.bind('new_astronaut', function(data) {
 
-
-				var room = _get_room.call(this, data.room);
-
+				var room     = _get_room.call(this, data.room);
 				var position = {
 					x: room.position.x,
 					y: room.position.y,
 					z: 2
-				}
+				};
 
-				var astronautConfig = lychee.extend(data, {
-					state: 'working-right',
-					position: position,
+				var astronaut = new game.entity.Astronaut({
+					state:      Math.random() > 0.5 ? 'working-right' : 'working-left',
+					position:   position,
 					properties: {
 						name: data.firstName + ' ' + data.lastName,
 						agency: data.agency,
 						teamPosition: data.position
 					}
 				});
-
-
-				var astronaut = new game.entity.Astronaut(data);
-
 
 				this.queryLayer('game', 'ship').addEntity(astronaut);
 
@@ -242,7 +236,7 @@ lychee.define('game.state.Game').requires([
 
 			this.loop.setInterval(1000, function(clock, delta) {
 
-				
+
 				this.__astronauts.forEach(function(astronaut) {
 					_animate_astronaut.call(this, astronaut);
 				}.bind(this));
