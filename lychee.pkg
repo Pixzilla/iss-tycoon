@@ -153,7 +153,14 @@
 					"fnt",
 					"js",
 					"json",
-					"png"
+					"png",
+					"fe-1.png",
+					"fe-2.png",
+					"fe-3.png",
+					"fe-4.png",
+					"fe-5.png",
+					"fe-6.png"
+
 				],
 				"Overlay": [
 					"js",

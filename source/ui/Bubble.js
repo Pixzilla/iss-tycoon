@@ -7,6 +7,15 @@ lychee.define('game.ui.Bubble').includes([
 	var _config  = attachments["json"].buffer;
 	var _texture = attachments["png"];
 
+	var _faces = {
+		'FE-1': attachments["fe-1.png"],
+		'FE-2': attachments["fe-2.png"],
+		'FE-3': attachments["fe-3.png"],
+		'FE-4': attachments["fe-4.png"],
+		'FE-5': attachments["fe-5.png"],
+		'FE-6': attachments["fe-6.png"]
+	};
+
 
 	var Class = function(data) {
 
@@ -58,31 +67,62 @@ lychee.define('game.ui.Bubble').includes([
 			);
 
 
-			var map = _config.map[this.key] || null;
-			if (map !== null) {
+			if (this.key === 'face') {
+				var png = _faces[this.value] || null;
 
-				var frame = map[0] || null;
-				if (frame !== null) {
+				if (png !== null) {
 
-					renderer.drawSprite(
-						position.x + offsetX - 16,
-						position.y + offsetY - 30,
-						_texture,
-						frame
-					);
+						renderer.drawSprite(
+							position.x + offsetX - 24,
+							position.y + offsetY - 24,
+							png
+						);
 
 				}
 
+
+			} else {
+
+				var map = _config.map[this.key] || null;
+
+				var iconWorks = false;
+
+				if (map !== null) {
+
+					var frame = map[0] || null;
+					if (frame !== null) {
+
+						renderer.drawSprite(
+							position.x + offsetX - 16,
+							position.y + offsetY - 30,
+							_texture,
+							frame
+						);
+
+						iconWorks = true;
+					}
+
+				}
+
+
+				var textPositon = {
+					x: position.x + offsetX,
+					y: position.y + offsetY + 12
+				};
+
+				if (!iconWorks) {
+					textPositon.y -= 10;
+				}
+
+				renderer.drawText(
+					textPositon.x,
+					textPositon.y,
+					this.value,
+					_font,
+					true
+				);
+
 			}
-
-
-			renderer.drawText(
-				position.x + offsetX,
-				position.y + offsetY + 12,
-				this.value,
-				_font,
-				true
-			);
 
 		}
 
