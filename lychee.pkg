@@ -162,6 +162,10 @@
 					"fe-6.png"
 
 				],
+				"Button": [
+					"js",
+					"png"
+				],
 				"Overlay": [
 					"js",
 					"fnt"
