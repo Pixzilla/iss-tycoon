@@ -14,7 +14,8 @@ lychee.define('game.ui.Overlay').requires([
 		var settings = lychee.extend({}, data);
 
 
-		this.__orbit = null;
+		this.__entity = null;
+		this.__orbit  = null;
 
 
 		lychee.ui.Layer.call(this, settings);
@@ -53,7 +54,8 @@ lychee.define('game.ui.Overlay').requires([
 				}
 
 
-				this.__orbit = 64;
+				this.__entity = entity;
+				this.__orbit  = 64;
 				// Math.max(entity.width / 2, entity.height / 2, entity.radius);
 
 			} else {
@@ -70,7 +72,11 @@ lychee.define('game.ui.Overlay').requires([
 
 
 
-			if (this.__orbit !== null) {
+			var entity = this.__entity;
+			if (entity !== null) {
+
+				this.position.x = entity.position.x;
+				this.position.y = entity.position.y;
 
 				var entities = this.entities;
 				var pi2  = 2 * Math.PI / entities.length;
