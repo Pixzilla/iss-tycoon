@@ -43,51 +43,37 @@ lychee.define('game.state.Game').requires([
 
 	var _animate_astronaut = function(astronaut) {
 
-return;
-
-		var posx     = astronaut.position.x;
-		var posy     = astronaut.position.y;
-		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) { return val instanceof game.entity.Airlock; });
-		var dist     = Infinity;
-		var nearest  = null;
-
-
-		for (var e = 0, el = entities.length; e < el; e++) {
-
-			var entity  = entities[e];
-			var current = Math.sqrt(Math.pow(entity.position.x - posx, 2) + Math.pow(entity.position.y - posy, 2));
-
-			if (current < dist) {
-				dist    = current;
-				nearest = entity;
-			}
-
+		// sleeping ... zZzZz
+		if (astronaut.state === 'default') {
+			return;
 		}
 
 
-		var distx = Math.abs(nearest.position.x - astronaut.position.x);
-		var disty = Math.abs(nearest.position.y - astronaut.position.y);
+		var room = astronaut.room || null;
+		if (room !== null) {
 
-		if (astronaut.nearest === null) {
+			var target_x = room.position.x - (room.width  / 2) + (Math.random() * room.width);
+			var target_y = room.position.y - (room.height / 2) + (Math.random() * room.height);
 
-			if (distx > 32 && disty > 32) {
-
-				var nearx = nearest.position.x;
-				var neary = nearest.position.y;
-
-				astronaut.nearest = nearest;
-				astronaut.addEffect(new lychee.effect.Position({
-					type:     lychee.effect.Position.TYPE.easein,
-					duration: 250 * Math.sqrt(Math.pow(distx, 2) + Math.pow(disty, 2)),
-					origin:   { x: posx,  y: posy },
-					position: { x: nearx, y: neary }
-				}));
-
+			if (target_x > astronaut.position.x) {
+				astronaut.state = 'working-right';
+			} else {
+				astronaut.state = 'working-left';
 			}
 
-		} else if (distx < 32 && disty < 32) {
 
-			astronaut.nearest = null;
+			astronaut.addEffect(new lychee.effect.Position({
+				type:     lychee.effect.Position.TYPE.linear,
+				duration: 6000,
+				origin:   {
+					x: astronaut.position.x,
+					y: astronaut.position.y
+				},
+				position: {
+					x: target_x,
+					y: target_y
+				}
+			}));
 
 		}
 
@@ -210,6 +196,10 @@ return;
 			});
 
 
+
+			var astronauts      = [];
+			var astronaut_index = 0;
+
 			this.client.bind('new_astronaut', function(data) {
 
 				var room     = _get_room.call(this, data.room);
@@ -230,9 +220,22 @@ return;
 					}
 				});
 
-console.log(astronaut);
+				astronaut.room = room;
+				astronauts.push(astronaut);
 
 				this.queryLayer('game', 'ship').addEntity(astronaut);
+
+			}, this);
+
+			this.loop.setInterval(3000, function() {
+
+				astronaut_index++;
+				astronaut_index %= astronauts.length;
+
+				var astronaut = astronauts[astronaut_index] || null;
+				if (astronaut !== null) {
+					_animate_astronaut.call(this, astronaut);
+				}
 
 			}, this);
 
