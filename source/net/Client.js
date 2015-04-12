@@ -65,7 +65,9 @@ lychee.define('game.net.Client').requires([
 				// debugger
 				astronaut.room = _ROOMS[_astronaut_id++];
 				_astronaut_id = _astronaut_id % _ROOMS.length;
-				astronaut.currentActivity = astronaut.activities[astronauts.activities.length - 1];
+				if (astronaut.activities && astronaut.activities.length > 0) {
+					astronaut.currentActivity = astronaut.activities[astronaut.activities.length - 1].label;
+				}
 
 				this.trigger('new_astronaut', [astronaut]);
 			}, this);
