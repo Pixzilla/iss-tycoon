@@ -26,6 +26,9 @@ lychee.define('game.net.Client').requires([
 		},
 		harmony: {
 			water       : 'NODE2000006'
+		},
+		tranquility: {
+			water				: 'NODE3000013' 
 		}
 	};
 
