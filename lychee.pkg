@@ -160,11 +160,21 @@
 					"fe-4.png",
 					"fe-5.png",
 					"fe-6.png"
-
 				],
 				"Overlay": [
 					"js",
 					"fnt"
+				],
+				"Bubbleas": [
+					"json",
+					"png"
+				],
+				"Button": [
+					"png"
+				],
+				"HUD": [
+					"js",
+					"png"
 				]
 			},
 			"DeviceSpecificHacks": [
@@ -200,7 +210,10 @@
 				"xml": [
 					"timeline.manager.js"
 				]
-			}
+			},
+			"logo": [
+				"png"
+			]
 		}
 	}
 }
