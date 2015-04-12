@@ -19,7 +19,7 @@ lychee.define('game.ui.Bubble').includes([
 
 		settings.radius = 48;
 		settings.shape  = lychee.ui.Entity.SHAPE.circle;
-
+		settings.tt
 
 		lychee.ui.Entity.call(this, settings);
 

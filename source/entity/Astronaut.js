@@ -27,6 +27,8 @@ lychee.define('game.entity.Astronaut').includes([
 
 		this.nearest = null;
 
+		this.properties  = settings.properties;
+
 
 		settings.texture = _textures[_id++];
 		settings.width   = 32;

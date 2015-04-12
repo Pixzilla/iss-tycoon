@@ -208,16 +208,23 @@ lychee.define('game.state.Game').requires([
 
 				var position = {
 					x: room.position.x,
-					y: room.position.y
+					y: room.position.y,
+					z: 2
 				}
 
 				var astronautConfig = lychee.extend(data, {
 					state: 'working-right',
-					position: position
+					position: position,
+					properties: {
+						name: data.firstName + ' ' + data.lastName,
+						agency: data.agency,
+						teamPosition: data.position
+					}
 				});
 
 
 				var astronaut = new game.entity.Astronaut(data);
+
 
 				this.queryLayer('game', 'ship').addEntity(astronaut);
 
