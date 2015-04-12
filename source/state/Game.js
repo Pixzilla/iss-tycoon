@@ -201,6 +201,15 @@ return;
 			}, this);
 
 
+			var rooms = this.queryLayer('game', 'ship').entities.filter(function(val) {
+				return val instanceof game.entity.Room;
+			});
+
+			rooms.forEach(function(room) {
+				room.properties['name'] = room.state;
+			});
+
+
 			this.client.bind('new_astronaut', function(data) {
 
 				var room     = _get_room.call(this, data.room);
