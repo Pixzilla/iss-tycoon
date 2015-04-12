@@ -14,8 +14,8 @@
 		body {
 			margin: 0;
 			padding: 0;
-			color: #fff;
-			background: #444;
+			color: #ffffff;
+			background: url('./entity/Background.png') #000000 center center repeat repeat;
 		}
 		
 		.lychee-Renderer-canvas {
@@ -25,6 +25,12 @@
 			-moz-user-select: none;
 			-ms-user-select: none;
 			-webkit-user-select: none;
+			zoom: 0.5;
+			opacity: 0;
+			-moz-transition: all 1s ease-out;
+			-ms-transition: all 1s ease-out;
+			-webkit-transition: all 1s ease-out;
+			transition: all 1s ease-out;
 		} 
 	</style>
 
@@ -33,6 +39,19 @@
 	<script src="./lib/lightstreamer.js"></script>
 
 	<script src="./index.js"></script>
+
+	<script>
+
+	setTimeout(function() {
+
+		var element = document.querySelector('canvas');
+		if (element !== null) {
+			element.style.zoom    = 1;
+			element.style.opacity = 1;
+		}
+
+	}, 1000);
+	</script>
 
 </body>
 </html>    
