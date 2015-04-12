@@ -213,10 +213,11 @@ lychee.define('game.state.Game').requires([
 					state:      Math.random() > 0.5 ? 'working-right' : 'working-left',
 					position:   position,
 					properties: {
-						name:         data.firstName + ' ' + data.lastName,
+						name:         data.firstName,
 						agency:       data.agency,
 						teamPosition: data.position,
-						activity:     data.currentActivity
+						activity:     data.activity,
+						face: 				data.position
 					}
 				});
 
