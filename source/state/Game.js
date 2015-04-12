@@ -226,7 +226,8 @@ return;
 						name:         data.firstName,
 						agency:       data.agency,
 						teamPosition: data.position,
-						activity:     data.currentActivity
+						activity:     data.activity,
+						face: 				data.position
 					}
 				});
 
