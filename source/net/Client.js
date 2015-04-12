@@ -63,16 +63,16 @@ lychee.define('game.net.Client').requires([
 			 * Astronauts
 			 */
 
+			// fake this shit
+			var _activities = ['sleep', 'sleep', 'phone', 'sleep', 'science', 'phone']
 
 			_blob.forEach(function(astronaut) {
 				// debugger
 				astronaut.room = _ROOMS[_astronaut_id++];
-				_astronaut_id = _astronaut_id % _ROOMS.length;
+				_astronaut_id = _astronaut_id % 6;
 				if (astronaut.activities && astronaut.activities.length > 0) {
-					astronaut.activity = astronaut.activities[astronaut.activities.length - 1].label.toLowerCase();
-					if (astronaut.activity === 'sleep') {
-						astronaut.activity = 'sleeping';
-					}
+					astronaut.activity = _activities[_astronaut_id];
+					
 				}
 
 				this.trigger('new_astronaut', [astronaut]);

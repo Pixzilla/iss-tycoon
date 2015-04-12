@@ -83,6 +83,10 @@ lychee.define('game.ui.Bubble').includes([
 
 			} else {
 
+				if (this.value === 'sleep') {
+					this.value = 'sleeping';
+				}
+
 				var map = _config.map[this.key] || _config.map[this.value] || null;
 
 				var iconWorks = false;
