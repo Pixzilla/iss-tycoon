@@ -116,7 +116,14 @@
 				"Astronaut": [
 					"js",
 					"json",
-					"png"
+					"blue.png",
+					"light.png",
+					"green.png",
+					"red.png",
+					"orange.png",
+					"pink.png",
+					"purple.png",
+					"yellow.png"
 				],
 				"Midground": [
 					"js",
