@@ -43,12 +43,6 @@ lychee.define('game.entity.Astronaut').includes([
 
 		settings = null;
 
-
-		this.setVelocity({
-			x: Math.random() * 10,
-			y: Math.random() * 10
-		});
-
 	};
 
 

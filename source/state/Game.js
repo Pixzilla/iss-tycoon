@@ -43,6 +43,8 @@ lychee.define('game.state.Game').requires([
 
 	var _animate_astronaut = function(astronaut) {
 
+return;
+
 		var posx     = astronaut.position.x;
 		var posy     = astronaut.position.y;
 		var entities = this.queryLayer('game', 'ship').entities.filter(function(val) { return val instanceof game.entity.Airlock; });
@@ -106,8 +108,6 @@ lychee.define('game.state.Game').requires([
 
 
 		this.deserialize(_blob);
-
-		this.__astronauts = [];
 
 		/*
 		 * INITIALIZATION
@@ -222,24 +222,21 @@ lychee.define('game.state.Game').requires([
 				var astronaut = new game.entity.Astronaut({
 					state:      Math.random() > 0.5 ? 'working-right' : 'working-left',
 					position:   position,
+					velocity:   {
+						x: 0,
+						y: 0,
+						z: 0
+					},
 					properties: {
-						name: data.firstName + ' ' + data.lastName,
-						agency: data.agency,
+						name:         data.firstName + ' ' + data.lastName,
+						agency:       data.agency,
 						teamPosition: data.position
 					}
 				});
 
+console.log(astronaut);
+
 				this.queryLayer('game', 'ship').addEntity(astronaut);
-
-			}, this);
-
-
-			this.loop.setInterval(1000, function(clock, delta) {
-
-
-				this.__astronauts.forEach(function(astronaut) {
-					_animate_astronaut.call(this, astronaut);
-				}.bind(this));
 
 			}, this);
 
