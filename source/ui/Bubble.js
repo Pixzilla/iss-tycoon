@@ -83,7 +83,7 @@ lychee.define('game.ui.Bubble').includes([
 
 			} else {
 
-				var map = _config.map[this.key] || null;
+				var map = _config.map[this.key] || _config.map[this.value] || null;
 
 				var iconWorks = false;
 
