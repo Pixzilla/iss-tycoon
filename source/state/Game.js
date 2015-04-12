@@ -182,13 +182,6 @@ lychee.define('game.state.Game').requires([
 
 			}, this);
 
-			entity = this.queryLayer('ui', 'button');
-			entity.bind('touch', function(id, position, delta) {
-
-				console.log('TOUCH!');
-
-			}, this);
-
 
 			this.client.bind('sensor', function(roomName, property, value) {
 
