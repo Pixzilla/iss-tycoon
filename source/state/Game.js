@@ -6,6 +6,7 @@ lychee.define('game.state.Game').requires([
 	'lychee.effect.Shake',
 	'game.entity.Astronaut',
 	'game.entity.Background',
+	'game.entity.Midground',
 	'game.entity.Airlock',
 	'game.entity.Room',
 	'game.ui.Overlay'
@@ -106,7 +107,7 @@ lychee.define('game.state.Game').requires([
 
 		this.deserialize(_blob);
 
-
+		this.__astronauts = [];
 
 		/*
 		 * INITIALIZATION
@@ -126,6 +127,10 @@ lychee.define('game.state.Game').requires([
 
 
 					entity = this.queryLayer('background', 'background');
+					entity.width  = width;
+					entity.height = height;
+
+					entity = this.queryLayer('midground', 'midground');
 					entity.width  = width;
 					entity.height = height;
 
@@ -174,10 +179,12 @@ lychee.define('game.state.Game').requires([
 				var target = this.queryLayer('game', 'ship').getEntity(null, position);
 				if (target !== null) {
 					this.__entity = target;
-					this.__overlay.setEntity(this.__entity);
+					this.__overlay.setEntity(target);
 					this.__overlay.setPosition(target.position);
 					this.__overlay.setVisible(true);
 				} else {
+					this.__entity = null;
+					this.__overlay.setEntity(null);
 					this.__overlay.setVisible(false);
 				}
 
@@ -196,9 +203,9 @@ lychee.define('game.state.Game').requires([
 
 			this.client.bind('new_astronaut', function(data) {
 
-				console.log(data.room);
+
 				var room = _get_room.call(this, data.room);
-				console.log(room.state);
+
 				var position = {
 					x: room.position.x,
 					y: room.position.y
@@ -219,6 +226,7 @@ lychee.define('game.state.Game').requires([
 
 			this.loop.setInterval(1000, function(clock, delta) {
 
+				
 				this.__astronauts.forEach(function(astronaut) {
 					_animate_astronaut.call(this, astronaut);
 				}.bind(this));

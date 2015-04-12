@@ -7,9 +7,25 @@
 				"entities": [{
 					"constructor": "game.entity.Background",
 					"arguments": [{}]
+				}, {
+					"constructor": "game.entity.Midground",
+					"arguments": [{}]
 				}],
 				"map": {
 					"background": 0
+				}
+			}
+		},
+		"midground": {
+			"constructor": "lychee.game.Layer",
+			"arguments": [{}],
+			"blob": {
+				"entities": [{
+					"constructor": "game.entity.Midground",
+					"arguments": [{}]
+				}],
+				"map": {
+					"midground": 0
 				}
 			}
 		},
@@ -84,7 +100,13 @@
 							"arguments": [{ "position": { "x": 208, "y": -416 }, "type" : "columbus", "country" : "US" }]
 						  }, {
 							"constructor": "game.entity.Room",
-							"arguments": [{ "position": { "x": -192, "y": -416 }, "type" : "jem", "country" : "US" }]
+							"arguments": [{ "position": { "x": -192, "y": -416 }, "type" : "jem", "country" : "EU" }]
+						  }, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": 128, "y": 352 }, "type" : "dc1", "country" : "USSR" }]
+						  }, {
+							"constructor": "game.entity.Room",
+							"arguments": [{ "position": { "x": -128, "y": 352 }, "type" : "mrm2", "country" : "US" }]
 						  }
                         ]
                     }

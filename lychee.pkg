@@ -78,11 +78,6 @@
 					"json",
 					"png"
 				],
-
-				"Room_OLD": [
-					"json"
-				],
-
 				"__TMP": {
 					"spaceapps-02": [
 						"png"
@@ -122,6 +117,10 @@
 					"js",
 					"json",
 					"png"
+				],
+				"Midground": [
+					"js",
+					"png"
 				]
 			},
 			"net": {
@@ -150,7 +149,8 @@
 					"png"
 				],
 				"Overlay": [
-					"js"
+					"js",
+					"fnt"
 				]
 			},
 			"DeviceSpecificHacks": [
@@ -163,7 +163,6 @@
 				"js"
 			],
 			"lib": {
-
 				"jquery": [
 					"js"
 				],
@@ -184,9 +183,8 @@
 				"page": [
 					"astronout.timeline.js"
 				],
-
-				"lightstreamer": [
-					"js"
+				"xml": [
+					"timeline.manager.js"
 				]
 			}
 		}
