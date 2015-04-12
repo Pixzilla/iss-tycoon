@@ -7,9 +7,25 @@
 				"entities": [{
 					"constructor": "game.entity.Background",
 					"arguments": [{}]
+				}, {
+					"constructor": "game.entity.Midground",
+					"arguments": [{}]
 				}],
 				"map": {
 					"background": 0
+				}
+			}
+		},
+		"midground": {
+			"constructor": "lychee.game.Layer",
+			"arguments": [{}],
+			"blob": {
+				"entities": [{
+					"constructor": "game.entity.Midground",
+					"arguments": [{}]
+				}],
+				"map": {
+					"midground": 0
 				}
 			}
 		},

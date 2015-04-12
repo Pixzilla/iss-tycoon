@@ -78,9 +78,6 @@
 					"json",
 					"png"
 				],
-				"Room_OLD": [
-					"json"
-				],
 				"__TMP": {
 					"spaceapps-02": [
 						"png"
@@ -119,6 +116,10 @@
 				"Astronaut": [
 					"js",
 					"json",
+					"png"
+				],
+				"Midground": [
+					"js",
 					"png"
 				]
 			},

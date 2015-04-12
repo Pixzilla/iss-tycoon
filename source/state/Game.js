@@ -6,6 +6,7 @@ lychee.define('game.state.Game').requires([
 	'lychee.effect.Shake',
 	'game.entity.Astronaut',
 	'game.entity.Background',
+	'game.entity.Midground',
 	'game.entity.Airlock',
 	'game.entity.Room',
 	'game.ui.Overlay'
@@ -125,6 +126,10 @@ lychee.define('game.state.Game').requires([
 
 
 					entity = this.queryLayer('background', 'background');
+					entity.width  = width;
+					entity.height = height;
+
+					entity = this.queryLayer('midground', 'midground');
 					entity.width  = width;
 					entity.height = height;
 
